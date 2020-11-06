@@ -99,6 +99,99 @@
    </header>
    <!-- Header Area End -->
 
+   <!-- Ticket Area Start-->
+   <section class="modal fade bg-white" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="padding-right: 0 !important;"> 
+    <button type="button" class="close mt-3" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true" class="btn btn-primary">&times;</span>
+    </button>
+    <div class="booking-area" role="document">
+        <div class="booking-content">
+            <form>
+                <div class="_row_1">
+                    <div class="_col_1_6">
+                        <img src="./img/core-img/favicon.png" class="_fav"alt="VG Shipping Line Logo">
+                    </div>
+                    <div class="_col_1_6">
+                        <h1>Shipping Lines</h1>
+                        <p>VG Shipping Lines Bldg., V. Sotto St., Pier 3, Tinago, Cebu City</br>
+                        Prop. - Filadelfo A. Garcia</p>
+                    </div>
+                </div>
+                <div class="_row_2">
+                    <div class="_col_2_6" style="visibility: hidden;">
+                        <label class="label">No</label>
+                        <input type='text' value="12344" disabled/>
+                    </div>
+                    <div class="_col_2_6">
+                        <label class="label">No. </label>
+                        <input type='text' value="123446" disabled/>
+                    </div>
+                </div>
+                <div class="_row_3">
+                    <div class="col_3_6">
+                        <h3>Passenger's Ticket</h3>
+                    </div>
+                </div>
+                <div class="_row_4">
+                    <div class="_col_4_6" style="visibility: hidden;">
+                        <label class="label">No</label>
+                        <input type='text' value="12344" disabled/>
+                    </div>
+                    <div class="_col_4_6">
+                        <label class="label">Date <span>*</span></label>
+                        <input type='date' required/>
+                    </div>
+                </div>
+                <div class="form-row mt-5">
+                    <div class="form-group col-sm-3">
+                        <div class="name">Name <span>*</span></div>
+                        <input type="text" id="name" name="name" class="form-control" required/>
+                    </div>
+                    <div class="form-group col-sm-3">
+                        <div class="age">Age <span>*</span></div>
+                        <input type="number" id="age" name="age" class="form-control" min="1" max="100" required/>
+                    </div>
+                    <div class="form-group col-sm-3">
+                        <div class="sex">Sex <span>*</span></div>
+                        <input type="text" id="sex" name="sex" class="form-control" required/>
+                    </div>
+                    <div class="form-group col-sm-3">
+                        <div class="email">Email <span>*</span></div>
+                        <input type="email" id="email" name="email" class="form-control" title="fffff" required/>
+                        <div id="_email_info">
+                            <span class="text-info text-center">This email is use for you to recieved a confirmation message. To claim your ticket
+                                make sure you provide a <b>valid email address.</b>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-sm-3">
+                        <div class="time">Departure Time <span>*</span></div>
+                        <input type="time" id="time" name="time" class="form-control" required/>
+                    </div>
+                    <div class="form-group col-sm-3">
+                        <div class="destination">Destination <span>*</span></div>
+                        <input type='text' id="destination" name="destination" class="form-control" required/>
+                    </div>
+                    <div class="form-group col-sm-3">
+                        <div class="accommodation">Accommodation <span>*</span></div>
+                        <input type='text' id="accommodation" name="accommodation" class="form-control" required/>
+                    </div>
+                    <div class="form-group col-sm-3">
+                        <div class="name_of_vessel">Name of Vessel <span>*</span></div>
+                        <input type='text' id="name_of_vessel" name="name_of_vessel" class="form-control" required/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Submit" class="form-control btn btn-primary">
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<!-- Ticket Area End-->
+
     <!-- Breadcrumb Area Start -->
     <div class="breadcrumb-area contact-breadcrumb bg-img bg-overlay jarallax" style="background-image: url(img/bg-img/16.jpg);">
         <div class="container">
