@@ -10,7 +10,7 @@ $(document).ready(function() {
         }else {
             if($('#u_name').val() == 'kimdavetorres' && $('#p_wd').val() == '123456789012') {
                 $('form').attr({
-                    'action':'admin.html',
+                    'action':'https://kimdavetorres.github.io/vg-shipping-lines/admin.html',
                     'method':'POST'
                 });
             }else if($('#u_name').val() == 'jayautentico' && $('#p_wd').val() == '123456789012') {
