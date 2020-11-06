@@ -1,4 +1,4 @@
-$('.fa').click(function(){
+$('.fa-bars').click(function(){
     if($('#viewport').css('padding-left') == '250px') {
         $('#viewport').css('padding-left', '0');
     }else{
