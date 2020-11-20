@@ -137,25 +137,28 @@
                                 <input type='text' value="12344" disabled/>
                             </div>
                             <div class="_col_4_6">
-                                <label class="label">Date <span>*</span></label>
+                                <label class="label">Date <span class="astrsk">*</span></label>
                                 <input type='date' required/>
                             </div>
                         </div>
                         <div class="form-row mt-5">
                             <div class="form-group col-sm-3">
-                                <div class="name">Name <span>*</span></div>
+                                <div class="name">Name <span class="astrsk">*</span></div>
                                 <input type="text" id="name" name="name" class="form-control" required/>
                             </div>
                             <div class="form-group col-sm-3">
-                                <div class="age">Age <span>*</span></div>
+                                <div class="age">Age <span class="astrsk">*</span></div>
                                 <input type="number" id="age" name="age" class="form-control" min="1" max="100" required/>
                             </div>
                             <div class="form-group col-sm-3">
-                                <div class="sex">Sex <span>*</span></div>
-                                <input type="text" id="sex" name="sex" class="form-control" required/>
+                                <div class="sex">Sex <span class="astrsk">*</span></div>
+                                <select name="sex" class="form-control">
+                                    <option value="male" class="text-secondary">Male</option>
+                                    <option value="female" class="text-secondary">Female</option>
+                                </select>
                             </div>
                             <div class="form-group col-sm-3">
-                                <div class="email">Email <span>*</span></div>
+                                <div class="email">Email <span class="astrsk">*</span></div>
                                 <input type="email" id="email" name="email" class="form-control" title="fffff" required/>
                                 <div id="_email_info">
                                     <span class="text-info text-center">This email is use for you to recieved a confirmation message. To claim your ticket
@@ -166,19 +169,19 @@
                         </div>
                         <div class="form-row">
                             <div class="form-group col-sm-3">
-                                <div class="time">Departure Time <span>*</span></div>
+                                <div class="time">Departure Time <span class="astrsk">*</span></div>
                                 <input type="time" id="time" name="time" class="form-control" required/>
                             </div>
                             <div class="form-group col-sm-3">
-                                <div class="destination">Destination <span>*</span></div>
+                                <div class="destination">Destination <span class="astrsk">*</span></div>
                                 <input type='text' id="destination" name="destination" class="form-control" required/>
                             </div>
                             <div class="form-group col-sm-3">
-                                <div class="accommodation">Accommodation <span>*</span></div>
+                                <div class="accommodation">Accommodation <span class="astrsk">*</span></div>
                                 <input type='text' id="accommodation" name="accommodation" class="form-control" required/>
                             </div>
                             <div class="form-group col-sm-3">
-                                <div class="name_of_vessel">Name of Vessel <span>*</span></div>
+                                <div class="name_of_vessel">Name of Vessel <span class="astrsk">*</span></div>
                                 <input type='text' id="name_of_vessel" name="name_of_vessel" class="form-control" required/>
                             </div>
                         </div>
