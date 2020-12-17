@@ -26,6 +26,16 @@
     transition: all 0.5s ease;
   }
 
+  .badge {
+    position: absolute;
+    top: 10px;
+    padding: 3px 5px;
+    right: 190px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+  }
+
   #sidebar header {
     background-color: #f3f3f3;
     font-size: 20px;
@@ -126,9 +136,9 @@
   color: #fff;
   background-color: green;
 }
-._assign_role, .__ticket, ._cus_ticket_dt {
-  display: none;
-} 
+/* ._assign_role, .__ticket, ._cus_ticket_dt {
+  display: block;
+}  */
 #ticket_no:focus,
 #_fname:focus,
 #_lname:focus,

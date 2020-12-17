@@ -26,8 +26,8 @@
     padding-top: 2.875rem !important;
     padding: 2.875rem;
 }
-#astrsk{
-    color: #212529 !important;
+.astrsk{
+    color: red;
 }
 .form-control:focus {
     border-color: rgba(6, 3, 90, 1);

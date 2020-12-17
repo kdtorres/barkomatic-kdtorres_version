@@ -10,13 +10,11 @@ $(document).ready(function() {
         }else {
             if($('#u_name').val() == 'kimdavetorres' && $('#p_wd').val() == '123456789012') {
                 $('form').attr({
-                    'action':'https://kimdavetorres.github.io/vg-shipping-lines/admin.html',
-                    'method':'POST'
+                    'action':'admin/welcome.php',
                 });
             }else if($('#u_name').val() == 'jayautentico' && $('#p_wd').val() == '123456789012') {
                 $('form').attr({
-                    'action':'ticket-in-charge.html',
-                    'method':'POST'
+                    'action':'ticket-in-charge.php',
                 });
             }else {
                 alert("No existing account!");
