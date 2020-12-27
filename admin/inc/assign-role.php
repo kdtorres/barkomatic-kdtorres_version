@@ -17,9 +17,9 @@ It returns true if a match is found and false if a match is not found.  -->
 taking into account the current character set of the connection.
 This function is used to create a legal SQL string that can be used in an SQL statement. -->
 
-<?php include '../config/dbconnection.php'; ?>
 
 <?php 
+    include '../config/dbconnection.php';
 
     // global variable for form value
     $fnamePostVal = "";
@@ -138,11 +138,11 @@ This function is used to create a legal SQL string that can be used in an SQL st
             $username =  mysqli_real_escape_string($conn, $_POST['_uname']);
             $password =  mysqli_real_escape_string($conn, $_POST['_pwd']);
 
-            $password_hash = password_hash($password, PASSWORD_DEFAULT);
+            // $password_hash = password_hash($password, PASSWORD_DEFAULT);
 
             // insert query execution
             $sql_ud = "INSERT INTO administrator_details (Firstname, Lastname, MI, RoleType, RoleDescription) VALUES ('$firstname', '$lastname', '$middlename', '$role_type', '$role_description')";
-            $sql_user = "INSERT INTO administrator (Username, Password) VALUES ('$username', '$password_hash')";
+            $sql_user = "INSERT INTO administrator (Username, Password) VALUES ('$username', '$password')";
           
             if(mysqli_query($conn, $sql_ud) && mysqli_query($conn, $sql_user)) {
                 echo "<div class='alert alert-success text-center rounded-0' style='position:fixed;width:23.5%;top:0;'><i class='fa fa-check-circle'></i> Save successfully!</div>";
@@ -228,7 +228,7 @@ This function is used to create a legal SQL string that can be used in an SQL st
                 <div class="_frm_role_col2 mt-3">
                         <div class="_role_col2">
                         <div>
-                            <label for="_rdesc">Role Description</label>
+                            <label for="_rdesc">Description</label>
                         </div>
                         <div>
                             <input type="text" id="_rdesc" value="<?php echo $rdescPostVal; ?>" name="_rdesc" required>
@@ -302,16 +302,16 @@ This function is used to create a legal SQL string that can be used in an SQL st
                             <td><?php echo $row["Username"]; ?></td>
                             <td><?php echo $row["Password"]; ?></td>
                             <td class="text-center">
-                                <a href="" class="btn btn-warning btn-sm text-white" title="Edit">
-                                    <i class="fa fa-pencil" aria-hidden="true"></i>
-                                </a>&nbsp;
-                                <a href="" class="btn btn-danger btn-sm" title="Delete">
-                                    <i class="fa fa-trash-o" aria-hidden="true"></i>
-                                </a>
+                                <?php echo "<a href='url/edit.php?id=".$row['ID']."'"."class='btn btn-warning btn-sm text-white' title='Edit'><i class='fa fa-pencil' aria-hidden='true'></i></a>"; ?>
+                                &nbsp;
+                                <?php echo "<a href='url/delete.php?id=".$row['ID']."'"."class='btn btn-danger btn-sm' title='Delete'><i class='fa fa-trash-o' aria-hidden='true'></i></a>"?>
+                               
                             </td>
                         </tr>
                 <?php }
-                } ?>
+                } 
+                mysqli_close($conn);
+                ?>
             </tbody>
         </table>
     </div>

@@ -4,13 +4,13 @@
     </header>
     <ul class="nav">
     <li>
-        <a href="approved-customer.php" id="_cus_ticket_btn">
+        <a href="customer.php" id="_cus_ticket_btn">
             <i class="fa fa-check-circle" aria-hidden="true"></i> Customer approved
         </a>
     </li>
     
     <li>
-        <a href="login.php">
+        <a href="url/logout.php">
             <i class="fa fa-power-off" aria-hidden="true"></i> Logout
         </a>
     </li>

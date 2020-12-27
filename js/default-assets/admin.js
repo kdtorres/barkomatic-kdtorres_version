@@ -108,8 +108,7 @@ for(var i = 0, max = allTableCells.length; i < max; i++) {
     }
 }
 
-$('.dropdown-menu').css('display','none');
-$('#potaclick').click(function() {
+$('#notif_btn').click(function() {
     if($('.dropdown-menu').css('display') == 'none') {
         $('.dropdown-menu').fadeIn();
     }else {

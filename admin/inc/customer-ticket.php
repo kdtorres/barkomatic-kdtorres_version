@@ -1,5 +1,3 @@
-<?php include '../config/dbconnection.php'; ?>
-
 <div class="_cus_ticket_dt"  style="height: 600px;">
     <table class="table table-sm table-striped table-white table-bordered">
         <thead>
@@ -21,6 +19,9 @@
         <tbody>
             
             <?php
+                // established database connection
+                require '../config/dbconnection.php';
+
                 // display all data from database
                 // join three tables
                 $sql = "SELECT cus.CustomerID, t.TicketNo, cus.Name, cus.Age, cus.Sex, cus.Email,
@@ -43,10 +44,14 @@
                             <td><?php echo $row["Destination"]; ?></td>
                             <td><?php echo $row["Accommodation"]; ?></td>
                             <td><?php echo $row["NameOfVessel"]; ?></td>
-                            <?php $count++;?>
-                            <td class="text-center"><a href="" class="btn btn-success btn-sm" title="Approved"><i class="fa fa-check-circle" aria-hidden="true"></i></a>&nbsp;<a href="" class="btn btn-danger btn-sm" title="Declined"><i class="fa fa-ban" aria-hidden="true"></i></a></td>
+                            <td class="text-center">
+                                <?php 
+                                    echo "<a href='url/approved.php?customerid=" . $row['CustomerID'] . "'" .  "class='btn btn-success' title='Approved'>" . "<i class='fa fa-check-circle' aria-hidden='true'></i>" . "</a>";
+                                ?>
+                            </td>
                         </tr>   
                 <?php }
+                mysqli_close($conn);
             } ?>
         </tbody>
     </table>

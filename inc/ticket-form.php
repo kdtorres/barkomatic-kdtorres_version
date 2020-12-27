@@ -216,15 +216,8 @@ This function is used to create a legal SQL string that can be used in an SQL st
                 echo "<div class='alert alert-danger role='alert'> Error: " . $sql . " " . mysqli_error($conn) . "</div>";
                 echo "<script type='text/javascript'>console.log('Update failed!');</script>";
             }
-
             // push admin notification
-            $notif_num = "Unread";
-            $_sql_notif = "INSERT INTO admin_notification (`NotificationStatus`) VALUES ('$notif_num')";
-            if(mysqli_query($conn, $_sql_notif)) {
-                echo "<script>console.log('Inserted');</script>";
-            }else {
-                echo "<div class='' role='alert'> Error: " . $_sql_notif . " " . mysqli_error($conn) . "</div>";
-            }
+            adminPushNotification($conn);
         }
     }
 
@@ -235,6 +228,15 @@ This function is used to create a legal SQL string that can be used in an SQL st
         return $data;
     }
 
+    function adminPushNotification($conn) {
+        $notif_status = "Unread";
+        $_sql_notif = "INSERT INTO admin_notification (`NotificationStatus`) VALUES ('$notif_status')";
+        if(mysqli_query($conn, $_sql_notif)) {
+            echo "<script>console.log('Inserted');</script>";
+        }else {
+            echo "<div class='' role='alert'> Error: " . $_sql_notif . " " . mysqli_error($conn) . "</div>";
+        }
+    }
  ?>
 
 <!-- Ticket Area Start-->

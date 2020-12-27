@@ -1,3 +1,5 @@
+<?php include '../inc/session_admin.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -15,6 +17,7 @@
         <link rel="stylesheet" href="../style.css">
     </head> 
     <body>
+    <?php require_once '../config/dbconnection.php'; ?>
         <!-- Preloader Start-->
         <!-- <div id="preloader">
             <div class="loader"></div>
@@ -32,7 +35,6 @@
                             <img src="../img/core-img/loader.gif" alt="Loading..">
                         </div>
                     </div>
-                    <?php include 'inc/push_notif_read.php';?>
                    <?php include 'inc/customer-ticket.php';?>
                 </div>
             </div>

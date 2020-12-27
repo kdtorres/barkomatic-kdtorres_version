@@ -17,9 +17,8 @@ It returns true if a match is found and false if a match is not found.  -->
 taking into account the current character set of the connection.
 This function is used to create a legal SQL string that can be used in an SQL statement. -->
 
-<?php include '../config/dbconnection.php'; ?>
-
 <?php 
+    require '../config/dbconnection.php';
 
     $ticketErrMsg = "";
     $ticketNumMsg = "";
@@ -91,7 +90,7 @@ This function is used to create a legal SQL string that can be used in an SQL st
                     <label for="stats">Status</label>
                 </div>
                 <div>
-                    <input type="text" id="stats" name="stats" value="Open for reservation">
+                    <input type="text" id="stats" name="stats" value="Open for reservation" readonly style="background-color:#eee;">
                 </div>
             </div>
         </div>
@@ -109,13 +108,13 @@ This function is used to create a legal SQL string that can be used in an SQL st
                 <th scope="col" class="text-white">ID</th>
                 <th scope="col" class="text-white">TicketNo</th>
                 <th scope="col" class="text-white">Status</th>
-                <th scope="col"></th>
+                <!-- <th scope="col"></th> -->
             </tr>
         </thead>
         <tbody>
 
             <?php 
-                //display all data from database
+                //display all ticket data from database
                 $sql = "SELECT TicketID, TicketNo, Status FROM ticket";
                 $result = mysqli_query($conn, $sql);
 
@@ -125,15 +124,16 @@ This function is used to create a legal SQL string that can be used in an SQL st
                             <th scope="row"><?php echo $row["TicketID"]; ?></th>
                             <td><?php echo $row["TicketNo"]; ?></td>
                             <td class="check_stats"><?php echo $row["Status"]; ?></td>
-                            <td class="text-center">
+                            <!-- <td class="text-center">
                                 <a href="" class="btn btn-danger btn-sm" title="Delete">
                                     <i class="fa fa-trash-o" aria-hidden="true"></i>
                                 </a>
-                            </td>
+                            </td> -->
                         </tr>
                 <?php }
-                } ?>
-
+                } 
+                mysqli_close($conn);
+                ?>
         </tbody>
     </table>
 </div>

@@ -1,14 +1,14 @@
 <?php
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $db = "vg_shippingdb";
+    $DB_SERVER = 'localhost';
+    $DB_USERNAME = 'root'; 
+    $DB_PASSWORD = '';
+    $DB_NAME = 'vg_shippingdb';
 
-    // create connection
-    $conn = mysqli_connect($servername, $username, $password, $db);
+    /* Attempt to connect to MySQL database */
+    $conn = mysqli_connect($DB_SERVER, $DB_USERNAME, $DB_PASSWORD, $DB_NAME);
     
     // check connection
     if(!$conn) {
-        echo("Connection failed: " . mysqli_connect_error());  
+        echo("ERROR: Could not connect." . mysqli_connect_error());  
     }
 ?>

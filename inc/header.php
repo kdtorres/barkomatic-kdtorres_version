@@ -40,7 +40,7 @@
                             <ul id="nav">
                                 <li class="active"><a href="index.php">Home</a></li>
                                 <li><a href="contact.php">Contact</a></li>
-                                <li><a href="login.php" target="_blank">Login</a></li>
+                                <li><a href="login.php?url=admin" target="_blank">Login</a></li>
                             </ul>
                             <div class="book-now-btn ml-3 ml-lg-5">
                                 <a href="reservation-ticket.php" target="_blank">

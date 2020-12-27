@@ -17,6 +17,9 @@ CREATE TABLE `vg_shippingdb`.`Administrator_Details` (
     PRIMARY KEY (`ID`)
 ) ENGINE = InnoDB;
 
+INSERT INTO administrator (Username, Password) VALUES ('kimdavetorres', 'ctu2020');
+INSERT INTO administrator_details (Firstname, Lastname, MI, RoleType, RoleDescription) VALUES ('Kim Dave', 'Torres', 'O', 'Admin', 'Manage customer');
+
 CREATE TABLE `vg_shippingdb`.`Ticket` ( 
     `TicketID` INT NOT NULL AUTO_INCREMENT , 
     `TicketNo` VARCHAR(6) NOT NULL , 

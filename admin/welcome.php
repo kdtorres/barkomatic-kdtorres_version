@@ -1,3 +1,5 @@
+<?php include '../inc/session_admin.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -16,10 +18,9 @@
     </head> 
     <body>
         <!-- Preloader Start-->
-        <!-- <div id="preloader">
+        <div id="preloader">
             <div class="loader"></div>
-        </div> -->
-        <!-- Preloader End-->
+        </div>
         
         <!-- Admin Dashboard Start-->
         <div id="viewport">

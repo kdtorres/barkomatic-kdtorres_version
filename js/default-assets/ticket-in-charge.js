@@ -79,3 +79,11 @@ $('#__role_btn').click(function(){
     }
 });
 
+$('#notif_btn').click(function() {
+    if($('.dropdown-menu').css('display') == 'none') {
+        $('.dropdown-menu').fadeIn();
+    }else {
+        $('.dropdown-menu').fadeOut();
+    }
+});
+

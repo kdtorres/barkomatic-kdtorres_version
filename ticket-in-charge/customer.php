@@ -1,3 +1,5 @@
+<?php include '../inc/session_tic.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -32,7 +34,7 @@
                             <img src="../img/core-img/loader.gif" alt="Loading..">
                         </div>
                     </div>
-                    <?php include 'inc/main-content.php'; ?>
+                    <?php include 'inc/approved-customer.php'; ?>
                 </div>
             </div>
         </div>

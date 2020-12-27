@@ -15,7 +15,7 @@
         </a>
     </li>
     <li>
-        <a href="login.php">
+        <a href="url/logout.php">
             <i class="fa fa-power-off" aria-hidden="true"></i> Logout
         </a>
     </li>

@@ -16,31 +16,15 @@
     </head>
     <body class="__lgn_page">
         <!-- Preloader Start-->
-        <div id="preloader">
+        <!-- <div id="preloader">
             <div class="loader"></div>
-        </div>
+        </div> -->
         <!-- Preloader End-->
         
         <!-- Login Section Start -->
         <div class="vg_login_content">
             <div class="col_frm">
-                <form>
-                    <div class="logo_lgn text-center">
-                        <img src="./img/core-img/logo.png" alt="VG Shipping Lines">
-                    </div>
-                    <div class="form-group">
-                        <input type='text' id="u_name" name="u_name" class="form-control form-control-lg" placeholder="Username" />
-                    </div>
-                    <div class="form-group">
-                        <input type='password' id="p_wd" name="p_wd" class="form-control form-control-lg" placeholder="Password" />
-                    </div>
-                    <div class="checkbox">
-                        <label><input type="checkbox"> Remember me</label>
-                        </div>
-                    <div class="form-group mb-4">
-                        <button  type="submit" id="lgn_submit" class="form-control form-control-lg btn btn-primary mt-3">Login</button>
-                    </div>
-                </form>
+               <?php require 'inc/from_login.php'; ?>
             </div>
             <div class="col_img">
                 <div class="logo_img">
@@ -62,6 +46,6 @@
         <!-- Active -->
         <script src="js/default-assets/active.js"></script>
         <!-- Login Identity -->
-        <script src="js/default-assets/login.js"></script>
+        <!-- <script src="js/default-assets/login.js"></script> -->
     </body>
 </html>
