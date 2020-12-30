@@ -51,10 +51,5 @@ http://localhost/vg-shipping-lines/
 * Notifications
 * Send Email 
 
-## Built With
-- HTML, CSS, JavaScript
-- Bootstrap, jQuery, Sass
-- PHP, MySQL
-
 
 
