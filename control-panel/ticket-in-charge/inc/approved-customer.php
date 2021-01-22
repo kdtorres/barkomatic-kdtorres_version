@@ -1,4 +1,4 @@
-<table class="table table-striped table-sm table-success">
+<table class="table table-striped table-sm table-success" style="margin-top:50px;">
     <thead>
         <tr class="bg-dark">
         <th scope="col" class="text-white">ApprovedID</th>
@@ -19,7 +19,6 @@
         <?php 
             $ap_id = "";
             include '../config/dbconnection.php';
-
             $sql = "SELECT ApID, TicketNo, Name, Age, Sex, Email, ReservationDate, DepartureTime, Destination, Accommodation, NameOfVessel
             FROM approved_customer";
             $stmt = mysqli_prepare($conn, $sql);

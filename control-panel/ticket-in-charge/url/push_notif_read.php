@@ -10,7 +10,7 @@
                 <script type='text/javascript'>
                     setTimeout(function() {
                         location.reload();
-                        window.location.replace('http://localhost/vg-shipping-lines/ticket-in-charge/customer.php');
+                        window.location.replace('http://localhost/vg-shipping-lines/control-panel/ticket-in-charge/customer.php');
                     }, false);
                 </script>
             ";
@@ -18,7 +18,7 @@
             echo "
                 <script type='text/javascript'>
                     setTimeout(function() {
-                        window.location.replace('http://localhost/vg-shipping-lines/ticket-in-charge/customer.php');
+                        window.location.replace('http://localhost/vg-shipping-lines/control-panel/ticket-in-charge/customer.php');
                     }, false);
                 </script>
             ";

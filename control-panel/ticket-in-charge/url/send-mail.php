@@ -1,13 +1,11 @@
 <?php
     include '../../config/dbconnection.php';
-
     $to = '';
     $customer_name = '';
     $subject = '';
     $message = '';
     $from = '';
     $param_id = '';
-
     // Check existence of customerid parameter before processing further
     if(isset($_GET['apid'])) {
         // Prepare a select statement
@@ -51,7 +49,7 @@
                 <script type='text/javascript'>
                     alert('Something went wrong, please try again later!');
                     setTimeout(function() {
-                        window.location.replace('http://localhost/vg-shipping-lines/ticket-in-charge/customer.php');
+                        window.location.replace('http://localhost/vg-shipping-lines/control-panel/ticket-in-charge/customer.php');
                     }, 300);
                 </script>
             ";
@@ -68,7 +66,7 @@
             <script type='text/javascript'> 
                 setTimeout(function() {
                     alert('Send successfully.');
-                    window.location.replace('http://localhost/vg-shipping-lines/ticket-in-charge/customer.php');
+                    window.location.replace('http://localhost/vg-shipping-lines/control-panel/ticket-in-charge/customer.php');
                 }, 300);
             </script>   
         ";

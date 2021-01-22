@@ -1,5 +1,4 @@
-<?php include '../inc/session_tic.php'; ?>
-
+<?php include '../session/session_tic.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>

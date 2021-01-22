@@ -1,28 +1,12 @@
 <style>
-    ._li_flex {
-        display: flex;
-        justify-content: space-between;
-        
-    }
-    .dropdown-menu {
-        left: auto;
-        padding-left: 12px;
-        position: absolute;
-        width: 195px;
-        background-color: #e1ecf4;
-        border: 1px solid #39739d !important;
-    }
-    .dropdown-menu p {
-        font-size: 0.675rem;
-        color: #39739d;
-    }
-    #notif_btn {
-        text-align: center;
-        margin-right: 45px;
-    }
+    ._li_flex {display:flex;justify-content:space-between;}
+    .dropdown-menu {left:auto;padding-left:12px;position:absolute;width:195px;background-color:#e1ecf4;border:1px solid #39739d !important;}
+    .dropdown-menu p {font-size: 0.675rem;color: #39739d;}
+    #notif_btn {text-align:center;margin-right:45px;}
 </style>
-<nav class="navbar bg-white">
+<nav class="navbar fixed-top bg-white">
     <div class="container-fluid">
+    <a href="#"><img src="../img/logo.png" alt="VG Shipping Lines Company" style="margin-left:23px;margin-top:-23px;width:165px;position:absolute;"></a>
         <ul class="mr-auto">
             <li class="_menu_icon">
             <i class="fa fa-bars" aria-hidden="true"></i>
@@ -31,9 +15,7 @@
         <div id="notif_btn">
             <?php 
                 include '../config/dbconnection.php';
-
                 $sql = "SELECT * FROM tic_notification WHERE NotificationStatus = 'Unread'";
-                
                 $result = mysqli_query($conn, $sql);
                 $count = 0;
                 if(mysqli_num_rows($result) > 0) {

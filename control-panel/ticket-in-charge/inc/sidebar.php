@@ -1,11 +1,8 @@
-<div id="sidebar">
-    <header>
-        <a href="#"><img src="../img/core-img/logo.png" alt="VG Shipping Lines Company" style="margin-left: -46px; margin-bottom:4px;"></a>
-    </header>
+<div id="sidebar" style="margin-top:48px !important;font-size:0.275rem !important;width:249px !important;">
     <ul class="nav">
     <li>
         <a href="customer.php" id="_cus_ticket_btn">
-            <i class="fa fa-check-circle" aria-hidden="true"></i> Customer approved
+            <i class="fa fa-check-circle" aria-hidden="true"></i> Customer
         </a>
     </li>
     
