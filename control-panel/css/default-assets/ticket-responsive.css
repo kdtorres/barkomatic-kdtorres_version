@@ -1,0 +1,78 @@
+
+@media screen and (max-width: 649px) {
+    label,
+    .name,
+    .age,
+    .sex,
+    .email,
+    .time,
+    .destination,
+    .accommodation,
+    .name_of_vessel {
+        font-size: 0.785rem;
+    }
+}
+@media screen and (max-width: 623px) {
+    .col_3_6 h3 {
+        display: none;
+    }
+    ._col_1_6 p {
+        font-weight: normal;
+        font-size: 0.775rem;
+    }
+    ._row_2, ._row_4 {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 425px) {
+    ._col_1_6 h1 {
+        font-size: 1.875rem;
+    }
+    ._col_1_6 p {
+        font-weight: normal;
+        font-size: 0.875rem;
+    }
+    ._row_2, ._row_4 {
+        flex-direction: column;
+    }
+    .col_3_6 h3 {
+        display: none;
+    }
+}
+@media screen and (max-width: 375px) {
+    ._col_1_6 p {
+        font-size: 0.695rem;
+        text-align: center;
+    }
+    ._col_1_6 h1 {
+        font-size: 1.575rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .booking-content {
+        padding-top: 1.5rem !important;
+        padding: .875rem;
+    }
+    .col_3_6 h3 {
+        display: none;
+    }
+    ._row_2, ._row_4 {
+        flex-direction: column;
+    }
+    ._col_1_6 p {
+        font-size: 0.675rem;
+        margin-top: -12px;
+        text-align: left;
+    }
+    label,
+    .name,
+    .age,
+    .sex,
+    .email,
+    .time,
+    .destination,
+    .accommodation,
+    .name_of_vessel {
+        font-size: 0.785rem;
+    }
+}

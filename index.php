@@ -7,10 +7,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Title -->
         <title>VG Shipping Lines</title>
-
         <!-- Favicon -->
         <link rel="icon" href="./img/core-img/favicon.png">
-
         <!-- Stylesheet -->
         <link rel="stylesheet" href="style.css">
     </head>
@@ -20,11 +18,9 @@
             <div class="loader"></div>
         </div>
         <!-- Preloader End-->
-        
         <!-- Header Area Start -->
         <?php include 'inc/header.php'; ?>
         <!-- Header Area End -->
-
         <!-- Welcome Area Start -->
         <section class="welcome-area">
             <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/bg-img/16.jpg);">
@@ -43,7 +39,6 @@
             </div>
         </section>
         <!-- Welcome Area End -->
-
         <!-- Blog Area Start -->
         <section class="roberto-blog-area section-padding-100-0">
             <div class="container">
@@ -96,7 +91,6 @@
             </div>
         </section>
         <!-- Blog Area End -->
-
         <section class="roberto-cta-area" >
             <div class="container"> 
                 <div class="cta-content bg-img bg-overlay jarallax" style="background-image: url(img/bg-img/1.jpg);">
@@ -114,14 +108,11 @@
                 </div>
             </div>
         </section>
-
         <div class="container mt-100"></div>
-
         <!-- Footer Area Start -->
         <?php include 'inc/footer.php'; ?>
         <!-- Footer Area End -->
 
-        <!-- **** /home ***** -->
         <!-- jQuery 2.2.4 -->
         <script src="js/jquery.min.js"></script>
         <!-- Popper -->

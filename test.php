@@ -1,39 +1,17 @@
 
 <?php 
+$num = 0;
+$num_six = 0;
 include 'config/dbconnection.php';
-    // $s = false;
-    $s = "";
     if($_SERVER["REQUEST_METHOD"] == "POST") {
-        // $a = 1;
-        // $b = 1;
-        // echo date('m-d-Y', strtotime($_REQUEST['date']));
-        // echo "</br>";
-        // echo date('H:i:s', strtotime($_REQUEST['time']));
-        // echo "</br>";
-        // echo date('g:i: A', strtotime($_REQUEST['time']));
-        // $sex = $_POST["sex"];
-        // if(empty($_REQUEST['date'])) {
-        //     echo "<div class='alert alert-danger'>required</div>";
-        // }
-        // if($b == $a) {
-        //     echo "<div class='alert alert-success text-center rounded-0 border-top-success' style='width:100%;position:fixed'><i class='fa fa-check-circle'></i> Submitted successfully!</div></br>";
-        //     $s = TRUE;
-        // }else {
-        //     echo "invalid!";
-        // }
-        if(empty($_POST["sex"])) {
-            echo "required!";
+        $qty = trim($_POST['qty']);
+        while($num < $qty) {
+            $six_digit_random_number = mt_rand(100000, 999999);
+            $num_six = $six_digit_random_number;
+            echo $num_six + '</br>';
+            $num++;
         }
-         $s = $_POST['sex'];
-            echo $s;
-            update();
     }
-
-    function update() {
-        echo "hell";
-    }
-   
-   
 ?>
 <style type="text/css">
     .form-style-2{
@@ -122,36 +100,14 @@ include 'config/dbconnection.php';
     </hr>
     <form action="" method="post">
         <label for="field1">
-            <span>Firstname<span class="required">*</span></span>
-            <input type="text" class="input-field" name="fname" value="" />
-        </label>
-        <label for="field2">
-            <span>Lastname<span class="required">*</span></span>
-            <input type="text" class="input-field" name="lname" value="" />
-        </label>
-        <label for="field4">
-            <span>Role Type<span class="required">*</span></span>
-            <select name="rtype" class="select-field">
-                <option value="General Question">General</option>
-                <option value="Advertise">Advertisement</option>
-                <option value="Partnership">Partnership</option>
-            </select>
-        </label>
-        <label for="field1">
-            <span>Description<span class="required">*</span></span>
-            <input type="text" class="input-field" name="rdescription" value="" />
-        </label>
-        <label for="field1">
-            <span>Username<span class="required">*</span></span>
-            <input type="text" class="input-field" name="uname" value="" />
-        </label>
-        <label for="field1">
-            <span>Password<span class="required">*</span></span>
-            <input type="password" class="input-field" name="password" value="" />
+            <span>Quantity<span class="required">*</span></span>
+            <input type="text" class="input-field" name="qty" value="" />
         </label>
         <label>
             <span></span>
             <input type="submit" value="Submit" />
         </label>
     </form>
+    <div>
+    </div>
 </div>

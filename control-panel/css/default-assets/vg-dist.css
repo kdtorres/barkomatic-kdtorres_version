@@ -1,0 +1,97 @@
+#_email_info span{
+    z-index: 1000;
+    position: absolute;
+    margin-top: -117px;
+    font-size: .698rem;
+    border-radius: 5px;
+    padding: .3rem;
+    font-weight: 500;
+    background-color: #fff;
+    box-shadow: 0 2px 1px #ccc inset, 0 0 6px#ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#_email_info {
+    display: none;
+}
+.__lgn_page {
+    overflow-y: hidden; 
+}
+.booking-content {
+    padding-top: 2.875rem !important;
+    padding: 2.875rem;
+}
+.astrsk{
+    color: red;
+}
+.form-control:focus {
+    border-color: rgba(6, 3, 90, 1);
+    box-shadow: 0 1px 1px rgba(6, 3, 90, 1) inset, 0 0 4px rgba(6, 3, 90, 1);
+    outline: 0 none;
+}
+.custom-control-input:checked~.custom-control-label::before {
+    background-color: rgba(6, 3, 90, 1);
+    box-shadow: 0 1px 1px rgba(6, 3, 90, 1) inset, 0 0 4px rgba(6, 3, 90, 1);
+}
+.btn-primary {
+    background-color: rgba(6, 3, 90, 1) !important;
+    border: none;
+}
+.vg_login_content {
+    display: flex;
+}
+.col_frm img {
+    margin-bottom: 3rem; 
+}
+.col_frm  {
+    width: 50vw;
+}
+.col_frm form {
+    margin: 0 auto;
+    margin-top: 4rem; 
+    width: 27rem;
+    padding: 1.368rem; 
+    border-radius:5px; 
+    box-shadow: 0 1px 1px #ccc inset, 0 0 8px #ccc;
+}
+.col_img img {
+    width: 50vw; 
+    height: 129vh;
+}
+.nice-select {
+    line-height: 28px !important;
+}
+._fav {
+    width: 5rem;
+}
+._row_1 {
+    display: flex;
+}
+._row_2, ._row_4{
+    display: flex; 
+    justify-content: space-between;
+}
+._col_2_6 input[type="text"] {
+    border: none; 
+    text-align: center;
+    padding: 0.457rem;
+}
+._row_3 h3{
+    text-transform: uppercase; 
+    padding-left: 0; margin: 0;
+}
+input[type=date], 
+input[type=datetime-local], 
+input[type=month], 
+input[type=time] {
+    padding:0.290rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+}
+

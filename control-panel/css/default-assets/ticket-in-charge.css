@@ -1,0 +1,197 @@
+#viewport {
+    padding-left: 250px;
+    overflow: auto;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  
+  #content {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  #sidebar {
+    z-index: 1000;
+    position: fixed;
+    width: 222px;
+    height: 100%;
+    margin-left: -250px;
+    margin-top: 57px !important;
+    overflow-y: auto;
+    background: #37474F !important;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+
+  #sidebar header {
+    background-color: #f3f3f3;
+    font-size: 20px;
+    line-height: 52px;
+    text-align: center;
+  }
+  
+  #sidebar header a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+  }
+  #sidebar header img {
+      width: 10rem;
+  }
+  #sidebar header a:hover {
+    color: #fff;
+  }
+  .navbar {
+      border-bottom: 1px solid #ccc;
+      line-height: 2.300rem;
+  }
+  .ml-auto a {
+      color: #555;
+  }
+  .navbar-toggler {
+      padding: .1rem;
+      padding-left: .2rem;
+      padding-right: .2rem;
+      color: #555;
+  }
+  #sidebar .nav li {
+    background: none;
+    border-bottom: 1px solid #455A64;
+    font-size: 14px;
+    width: 100%;
+    padding: 16px 24px;
+  }
+  #sidebar .nav li a {
+    color: #CFD8DC;
+  }
+  #sidebar .nav a:hover{
+    background: none;
+    color: #ECEFF1;
+  }
+  #sidebar .nav a i{
+    margin-right: 16px;
+  }
+  ._adm_content {
+    font-size: .8rem;
+    width: 100%;
+  }
+  ._wlcm {
+    margin: 0 auto;
+    width: 25rem;
+  }
+    ._loader_gif {
+    margin: 0 auto;
+    width: 25rem;
+  }
+  ._loader {
+    z-index: 1000;
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    height: 100vh;
+    width: 100vw;
+  }
+  ._loader_gif img{
+    padding-top: 50%;
+    margin-left: -70%;
+    width: 2.367rem;
+  }
+  .fa:hover {
+    cursor: pointer;
+  }
+  ._wlcm h1{
+    color: #37474F;
+    margin-top: 50%;
+  }
+._notif_num_cus{
+  position: absolute;
+  width: 20px;
+  padding: .3rem;
+  font-size: .5rem;
+  border-radius: 500px;
+  margin-top: -.3rem;
+  margin-left: .5rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: rgb(241, 28, 28);
+}
+._notif_num_ticket {
+  position: absolute;
+  width: 20px;
+  padding: .3rem;
+  font-size: .5rem;
+  border-radius: 500px;
+  margin-top: -.3rem;
+  margin-left: .5rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: green;
+}
+/* ._assign_role, .__ticket, ._cus_ticket_dt {
+  display: block;
+}  */
+#ticket_no:focus,
+#_fname:focus,
+#_lname:focus,
+#_mname:focus,
+#_rtype:focus,
+#_rdesc:focus,
+#_uname:focus,
+#_pwd:focus {
+  outline: 0;
+  box-shadow: none;
+  border: 2px solid #f2e2b1;
+  background: #fff6da;
+}
+#ticket_no,
+#stats,
+#_fname,
+#_lname,
+#_mname,
+#_rtype,
+#_rdesc,
+#_uname,
+#_pwd{
+  outline: 0;
+  box-shadow: none;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  padding: .2rem;
+}
+._frm_tickt {
+  display: flex;
+  justify-content: space-between;
+}
+._frm_role_col1 {
+  display: flex;
+}
+._role_col1 {
+  margin-right: 1.3rem;
+}
+._role_col2 {
+  margin-right: 1.3rem;
+}
+._frm_role_col2 {
+  display: flex;
+}
+._add_ticket {
+  margin: 2rem;
+  margin-top: .4rem;
+  width: 22rem;
+}
+._assign_role_frm {
+  margin: 2rem;
+  margin-top: .4rem;
+}
+._role_system_data{
+  margin: 2rem;
+}
+._cus_ticket_dt{
+  /* margin: 2rem; */
+  margin-top: 0;
+}
+._submit_btn { display: flex; align-items: center;}
