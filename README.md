@@ -1,5 +1,5 @@
 # VG Shipping Line
-Reservation Ticketing System is a technology that receives a service request (for support, reserving
+Reservation Ticketing System that receives a service request (for support, reserving
 ticket, etc.) from an end-user.
 
 ## Prerequisites
