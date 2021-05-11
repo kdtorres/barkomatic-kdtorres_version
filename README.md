@@ -1,5 +1,5 @@
 # BarkoMatic
-Reservation ticketing system for all shipping companies.
+Reservation ticketing system for shipping companies
 
 ## Prerequisites
 * [XAMPP](https://www.apachefriends.org/index.html) - Cross-platform web server
