@@ -1,6 +1,5 @@
-# VG Shipping Line
-Reservation Ticketing System that receives a service request (for support, reserving
-ticket, etc.) from an end-user.
+# BarkoMatic
+Reservation ticketing system for all shipping companies.
 
 ## Prerequisites
 * [XAMPP](https://www.apachefriends.org/index.html) - Cross-platform web server
