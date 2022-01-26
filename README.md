@@ -1,53 +1,81 @@
-# BarkoMatic
-A Web Online Ticket for Shipping
+<p align="center"><img src="https://github.com/kimdavetorres/barkomatic/blob/main/img/core-img/logo.png" title="Barkomatic" alt="Barkomatic" /></p>
+<p align="center">A Web Online Ticketing for Shipping</p>
+
 ## Prerequisites
-* [XAMPP](https://www.apachefriends.org/index.html) - Cross-platform web server
+ [XAMPP](https://www.apachefriends.org/index.html) - Cross-platform web server
 
 ## Configuration
-* Locate C:\xampp\sendmail\sendmail.ini and replace the following:
+PHP Mailer code configuration
 ```
-smtp_server=smtp.gmail.com
-
-smtp_port=465
-
-smtp_ssl=ssl
-
-auth_username=your@gmail.com
-auth_password=yourpassword
-
-force_sender=your@gmail.com
-
-hostname=localhost
+├── barkomatic
+|   ├── dashboard
+|   |   ├── ship
+|   |   |   ├── modules
+|   |   |   |   └── process.php
+|   ├── modules
+|   |   ├── create-account
+|   |   |   ├── login
+|   |   |   |   └── process.php
+|   |   ├── schedule
+|   |   |   └── process.php
 ```
-* Locate C:\xampp\php\php.ini find [mail function] and replace the following:
+```php
+function modifiedFunctionNameEx(param1_ex, param2_ex) {
+    $mail = new PHPMailer(true);
+    try{
+        $mail->Username = 'yourShippingEmail@gmail.com',
+        $mail->Password = 'yourShippingEmailPasswordReal,
+        
+    // It can be changed from static email into dynamic based on ship owners registration you can freely make your own algorithm for this.
+    
+   ...
+   
 ```
-[mail function]
-; For Win32 only.
-; http://php.net/smtp
-; SMTP=localhost
-; http://php.net/smtp-port
-; smtp_port=25
 
-; For Win32 only.
-; http://php.net/sendmail-from
-; sendmail_from= 
-
-; For Unix only.  You may supply arguments as well (default: "sendmail -t -i").
-; http://php.net/sendmail-path
-sendmail_path = "C:\xampp\sendmail\sendmail.exe -t"
-```
 ## Deployment
-* Open the xampp control panel and start Apache and MySQL
-* Import the file SQL located at folder vg-shipping-line/mysql/vg-shippingdb.sql
-* In your browser type:
+1. Open XAMPP Control Panel and start:
+  `Apache`
+  and
+  `MySQL`
+2. Import database file located at:
 ```
-http://localhost/vg-shipping-lines/
+├── barkomatic
+|   ├── db
+|   |   └── barkomatic_tables.sql
+```
+3. In your browser type:
+```
+http://localhost/barkomatic/
 ```
 ## Project Functionality
-* Reservation Ticket 
-* Content Management
-* Notifications
-* Send Email 
-
-
-
+ `Passenger`
+  ```
+  Create Account
+  Login
+  Reset Password
+  Search Schedule
+  Reservation
+  Reservation Expiry
+  Email Notification
+  ```
+ `Ship Owner`
+  ```
+  Create Account
+  Login
+  Reset Password
+  Dashboard
+  Create Reservation Schedules
+  Create Roles to manage passenger resevation status
+  Content Management
+  ```
+`Ship Staff`
+  ```
+  Create Account
+  Login
+  Reset Password
+  Dashboard
+  Manage passenger reservations
+  Send email notification reservation status
+  Content Management
+  ```
+  
