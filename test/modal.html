@@ -1,0 +1,1436 @@
+<html lang="en-gb" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"
+    style="overflow: hidden;" id="ls-global">
+<!--<![endif]-->
+
+<head>
+    <style>
+        .gm-control-active>img {
+            box-sizing: content-box;
+            display: none;
+            left: 50%;
+            pointer-events: none;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%)
+        }
+        
+        .gm-control-active>img:nth-child(1) {
+            display: block
+        }
+        
+        .gm-control-active:hover>img:nth-child(1),
+        .gm-control-active:active>img:nth-child(1) {
+            display: none
+        }
+        
+        .gm-control-active:hover>img:nth-child(2),
+        .gm-control-active:active>img:nth-child(3) {
+            display: block
+        }
+    </style>
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans:400,500,700|Google+Sans+Text:400">
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Google+Sans+Text:400&amp;text=%E2%86%90%E2%86%92%E2%86%91%E2%86%93">
+    <style>
+        .gm-ui-hover-effect {
+            opacity: .6
+        }
+        
+        .gm-ui-hover-effect:hover {
+            opacity: 1
+        }
+    </style>
+    <style>
+        .gm-style .gm-style-cc a,
+        .gm-style .gm-style-cc button,
+        .gm-style .gm-style-cc span,
+        .gm-style .gm-style-mtc div {
+            font-size: 10px;
+            box-sizing: border-box
+        }
+    </style>
+    <style>
+        @media print {
+            .gm-style .gmnoprint,
+            .gmnoprint {
+                display: none
+            }
+        }
+        
+        @media screen {
+            .gm-style .gmnoscreen,
+            .gmnoscreen {
+                display: none
+            }
+        }
+    </style>
+    <style>
+        .dismissButton {
+            background-color: #fff;
+            border: 1px solid #dadce0;
+            color: #1a73e8;
+            border-radius: 4px;
+            font-family: Roboto, sans-serif;
+            font-size: 14px;
+            height: 36px;
+            cursor: pointer;
+            padding: 0 24px
+        }
+        
+        .dismissButton:hover {
+            background-color: rgba(66, 133, 244, 0.04);
+            border: 1px solid #d2e3fc
+        }
+        
+        .dismissButton:focus {
+            background-color: rgba(66, 133, 244, 0.12);
+            border: 1px solid #d2e3fc;
+            outline: 0
+        }
+        
+        .dismissButton:focus:not(:focus-visible) {
+            background-color: #fff;
+            border: 1px solid #dadce0;
+            outline: none
+        }
+        
+        .dismissButton:focus-visible {
+            background-color: rgba(66, 133, 244, 0.12);
+            border: 1px solid #d2e3fc;
+            outline: 0
+        }
+        
+        .dismissButton:hover:focus {
+            background-color: rgba(66, 133, 244, 0.16);
+            border: 1px solid #d2e2fd
+        }
+        
+        .dismissButton:hover:focus:not(:focus-visible) {
+            background-color: rgba(66, 133, 244, 0.04);
+            border: 1px solid #d2e3fc
+        }
+        
+        .dismissButton:hover:focus-visible {
+            background-color: rgba(66, 133, 244, 0.16);
+            border: 1px solid #d2e2fd
+        }
+        
+        .dismissButton:active {
+            background-color: rgba(66, 133, 244, 0.16);
+            border: 1px solid #d2e2fd;
+            box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15)
+        }
+        
+        .dismissButton:disabled {
+            background-color: #fff;
+            border: 1px solid #f1f3f4;
+            color: #3c4043
+        }
+    </style>
+    <style>
+        .gm-style-moc {
+            background-color: rgba(0, 0, 0, 0.45);
+            pointer-events: none;
+            text-align: center;
+            transition: opacity ease-in-out
+        }
+        
+        .gm-style-mot {
+            color: white;
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 22px;
+            margin: 0;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%)
+        }
+    </style>
+    <style>
+        .gm-style img {
+            max-width: none;
+        }
+        
+        .gm-style {
+            font: 400 11px Roboto, Arial, sans-serif;
+            text-decoration: none;
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!--[if lt IE 9]> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <![endif]-->
+
+    <title> AppMojo - One page HTML5 Template </title>
+
+    <meta name="description" content="">
+    <meta name="author" content="designthemes">
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!--[if lte IE 8]>
+		<script type="text/javascript" src="http://explorercanvas.googlecode.com/svn/trunk/excanvas.js"></script>
+	<![endif]-->
+
+    <!-- **Favicon** -->
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+    <!-- **CSS - stylesheets** -->
+    <link id="default-css" href="style.css" rel="stylesheet" media="all">
+    <link id="shortcodes-css" href="css/shortcode.css" rel="stylesheet" media="all">
+    <link href="css/meanmenu.css" rel="stylesheet" type="text/css" media="all">
+    <link id="skin-css" href="skins/skyblue/style.css" rel="stylesheet" media="all">
+
+    <link href="css/responsive.css" rel="stylesheet" type="text/css">
+
+    <!-- **Animation stylesheets** -->
+    <link href="css/animations.css" rel="stylesheet" type="text/css">
+    <link href="css/isotope.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" media="all">
+
+    <!-- **Font Awesome** -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="css/font-awesome-ie7.min.css" />
+    <![endif]-->
+
+    <!-- **Google - Fonts** -->
+    <link href="http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300italic,400italic,600" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+
+    <!-- SLIDER STYLES STARTS -->
+    <link rel="stylesheet" type="text/css" href="js/revolution/settings.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="js/layerslider/layerslider.css" media="screen">
+    <!-- SLIDER STYLES ENDS -->
+
+    <!-- **jQuery** -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+
+    <script type="text/javascript" charset="UTF-8" src="http://maps.google.com/maps-api-v3/api/js/46/12a/common.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="http://maps.google.com/maps-api-v3/api/js/46/12a/util.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="http://maps.google.com/maps-api-v3/api/js/46/12a/geocoder.js"></script>
+    <link rel="stylesheet" href="js/layerslider/skins/borderlessdark3d/skin.css" type="text/css">
+    <script type="text/javascript" charset="UTF-8" src="http://maps.google.com/maps-api-v3/api/js/46/12a/map.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="http://maps.google.com/maps-api-v3/api/js/46/12a/controls.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="http://maps.google.com/maps-api-v3/api/js/46/12a/onion.js"></script>
+</head>
+
+<body style="">
+    <div class="wrapper">
+        <div class="inner-wrapper">
+            <!-- Header div Starts here -->
+            <header id="header">
+                <div class="container">
+                    <div id="logo">
+                        <a href="index.html"> <img src="images/logo.png" alt="" title=""> </a>
+                    </div>
+                    <div id="menu-container">
+                        <nav id="main-menu">
+                            <ul class="group">
+                                <li class="menu-item"><a href="#home">Home</a></li>
+                                <li class="menu-item"><a href="#services">Services</a></li>
+                                <li class="menu-item current_page_item"><a href="#features">Features</a></li>
+                                <li class="menu-item"><a href="#pricing">Pricing Table</a></li>
+                                <li class="menu-item"><a href="#about">About</a></li>
+                                <li class="menu-item"><a href="#screenshot">Screenshots</a></li>
+                                <li class="menu-item"><a href="#contact">Contact</a></li>
+                                <li id="magic-line" style="width: 89px; left: 156.516px;"></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <!-- Header div Ends here -->
+            <div id="main">
+                <!-- home section Starts here -->
+                <section id="home" class="content">
+                    <div class="fullwidthbanner-container banner" style="overflow: visible;">
+                        <div class="fullwidthbanner revslider-initialised tp-simpleresponsive" id="revslider-165" style="height: 890px;">
+                            <ul style="display: block; overflow: hidden; width: 100%; height: 100%; max-height: 570px;">
+                                <li data-transition="random" data-slotamount="7" data-masterspeed="300" data-delay="10000" style="width: 100%; height: 100%; overflow: hidden; visibility: visible; left: 0px; top: 0px; z-index: 18; opacity: 1; position: absolute; transform: scale(1, 1) translate(0px, 0px) rotate(0deg);">
+                                    <div class="slotholder"><img src="http://placehold.it/1920x570" alt="slider-bg" data-fullwidthcentering="on" class="defaultimg" style="width: 1920px; height: 570px; position: absolute; top: 0px; left: -226px; opacity: 0;"></div>
+                                    <div class="tp-caption lfl start" data-x="-6" data-y="67" data-speed="1000" data-start="500" data-easing="easeOutExpo" style="transform: scale(1, 1) rotate(0deg); opacity: 1; left: -661px; top: 67px; visibility: visible;"> <img src="http://placehold.it/601x397" alt="Image 1" style="width: 601px; height: 397px;">
+                                    </div>
+
+                                    <div class="tp-caption lfb start" data-x="67" data-y="410" data-speed="1000" data-start="1500" data-easing="easeOutExpo" style="transform: scale(1, 1) rotate(0deg); opacity: 1; left: 331px; top: 950px; visibility: visible;"><img src="http://placehold.it/198x71" alt="Image 2" style="width: 198px; height: 71px;">
+                                    </div>
+
+                                    <div class="tp-caption lfb start" data-x="285" data-y="410" data-speed="1000" data-start="2000" data-easing="easeOutExpo" style="transform: scale(1, 1) rotate(0deg); opacity: 1; left: 549px; top: 950px; visibility: visible;"><img src="http://placehold.it/198x71" alt="Image 3" style="width: 198px; height: 71px;">
+                                    </div>
+
+                                    <div class="tp-caption custom_title lft start" data-x="560" data-y="58" data-speed="1000" data-start="2500" data-easing="easeOutExpo" style="font-size: 30px; padding: 0px; margin: 0px; border-width: 0px; line-height: 36px; white-space: nowrap; min-width: 0px; min-height: 0px; transform: scale(1, 1) rotate(0deg); opacity: 1; left: 824px; top: -132px; visibility: visible;">Some good words from our <br> Customer
+                                    </div>
+
+                                    <div class="tp-caption custom_subtitle sft start" data-x="560" data-y="182" data-speed="1000" data-start="3000" data-easing="easeOutExpo" style="font-size: 25px; padding: 0px; margin: 0px; border-width: 0px; line-height: 30px; white-space: nowrap; min-width: 0px; min-height: 0px; transform: scale(1, 1) rotate(0deg); opacity: 0; left: 824px; top: 132px; visibility: visible;">“A Complete Package”
+                                    </div>
+
+                                    <div class="tp-caption sfl start" data-x="560" data-y="215" data-speed="1000" data-start="3500" data-easing="easeOutExpo" style="transform: scale(1, 1) rotate(0deg); opacity: 0; left: 774px; top: 215px; visibility: visible;"><img src="images/revolution/star1.png" alt="Image 6" style="width: 94px; height: 14px;">
+                                    </div>
+
+                                    <div class="tp-caption custom_reviewtext sfr start" data-x="673" data-y="216" data-speed="1000" data-start="3500" data-easing="easeOutExpo" style="font-size: 13px; padding: 0px; margin: 0px; border-width: 0px; line-height: 13px; white-space: nowrap; min-width: 0px; min-height: 0px; transform: scale(1, 1) rotate(0deg); opacity: 0; left: 987px; top: 216px; visibility: visible;">- Ran Dan, Modern Texas
+                                    </div>
+
+                                    <div class="tp-caption fade start" data-x="560" data-y="242" data-speed="1000" data-start="4000" data-easing="easeOutExpo" style="opacity: 0; left: 824px; top: 242px; transform: scale(1, 1) rotate(0deg); visibility: visible;"><img src="images/revolution/reviews-splitter.jpg" alt="Image 9" style="width: 380px; height: 2px;">
+                                    </div>
+
+                                    <div class="tp-caption custom_subtitle sft start" data-x="560" data-y="278" data-speed="1000" data-start="4500" data-easing="easeOutExpo" style="font-size: 25px; padding: 0px; margin: 0px; border-width: 0px; line-height: 30px; white-space: nowrap; min-width: 0px; min-height: 0px; transform: scale(1, 1) rotate(0deg); opacity: 0; left: 824px; top: 228px; visibility: visible;">“A Perfect Mobile Companion”
+                                    </div>
+
+                                    <div class="tp-caption sfl start" data-x="560" data-y="311" data-speed="1000" data-start="5000" data-easing="easeOutExpo" style="transform: scale(1, 1) rotate(0deg); opacity: 0; left: 774px; top: 311px; visibility: visible;"><img src="images/revolution/star2.png" alt="Image 6" style="width: 94px; height: 14px;">
+                                    </div>
+
+                                    <div class="tp-caption custom_reviewtext sfr start" data-x="673" data-y="312" data-speed="1000" data-start="5000" data-easing="easeOutExpo" style="font-size: 13px; padding: 0px; margin: 0px; border-width: 0px; line-height: 13px; white-space: nowrap; min-width: 0px; min-height: 0px; transform: scale(1, 1) rotate(0deg); opacity: 0; left: 987px; top: 312px; visibility: visible;">- Steve McClain, Jupiter House
+                                    </div>
+
+                                    <div class="tp-caption fade start" data-x="560" data-y="338" data-speed="1000" data-start="5500" data-easing="easeOutExpo" style="opacity: 0; left: 824px; top: 338px; transform: scale(1, 1) rotate(0deg); visibility: visible;"><img src="images/revolution/reviews-splitter.jpg" alt="Image 9" style="width: 380px; height: 2px;">
+                                    </div>
+
+                                    <div class="tp-caption custom_subtitle sft start" data-x="560" data-y="374" data-speed="1000" data-start="6000" data-easing="easeOutExpo" style="font-size: 25px; padding: 0px; margin: 0px; border-width: 0px; line-height: 30px; white-space: nowrap; min-width: 0px; min-height: 0px; transform: scale(1, 1) rotate(0deg); opacity: 0; left: 824px; top: 324px; visibility: visible;">“you will have more feature <br> than any other app”
+                                    </div>
+
+                                    <div class="tp-caption sfl start" data-x="560" data-y="438" data-speed="1000" data-start="6500" data-easing="easeOutExpo" style="transform: scale(1, 1) rotate(0deg); opacity: 0; left: 774px; top: 438px; visibility: visible;"><img src="images/revolution/star3.png" alt="Image 6" style="width: 94px; height: 14px;">
+                                    </div>
+
+                                    <div class="tp-caption custom_reviewtext sfr start" data-x="673" data-y="439" data-speed="1000" data-start="6500" data-easing="easeOutExpo" style="font-size: 13px; padding: 0px; margin: 0px; border-width: 0px; line-height: 13px; white-space: nowrap; min-width: 0px; min-height: 0px; transform: scale(1, 1) rotate(0deg); opacity: 0; left: 987px; top: 439px; visibility: visible;">- Ellie, Stan Wanson
+                                    </div>
+                                </li>
+
+                                <li data-transition="random" data-slotamount="7" data-masterspeed="300" style="width: 100%; height: 100%; overflow: hidden; visibility: visible; left: 0px; top: 0px; z-index: 18; opacity: 1;">
+                                    <div class="slotholder"><img src="http://placehold.it/1920x570" alt="slider-bg" class="defaultimg" style="width: 1920px; height: 570px; position: absolute; top: 0px; left: -226px; opacity: 0;"></div>
+                                    <div class="tp-caption lfr start" data-x="360" data-y="105" data-speed="1000" data-start="500" data-easing="easeOutExpo" style="transform: scale(1, 1) rotate(0deg); opacity: 1; left: 1528px; top: 105px; visibility: visible;"><img src="http://placehold.it/596x467" alt="Image 1" style="width: 596px; height: 467px;">
+                                    </div>
+
+                                    <div class="tp-caption lfb start" data-x="255" data-y="246" data-speed="1000" data-start="2000" data-easing="easeOutExpo" style="transform: scale(1, 1) rotate(0deg); opacity: 1; left: 519px; top: 950px; visibility: visible;"><img src="http://placehold.it/288x325" alt="Image 2" style="width: 288px; height: 325px;">
+                                    </div>
+
+                                    <div class="tp-caption custom_title2 lft start" data-x="0" data-y="166" data-speed="1000" data-start="1500" data-easing="easeOutExpo" style="font-size: 30px; padding: 0px; margin: 0px; border-width: 0px; line-height: 36px; white-space: nowrap; min-width: 0px; min-height: 0px; transform: scale(1, 1) rotate(0deg); opacity: 1; left: 264px; top: -96px; visibility: visible;">Have an App to Promote?
+                                    </div>
+
+                                    <div class="tp-caption custom_content sfl start" data-x="0" data-y="224" data-speed="1000" data-start="2500" data-easing="easeOutExpo" style="font-size: 16px; padding: 0px; margin: 0px; border-width: 0px; line-height: 26px; white-space: nowrap; min-width: 0px; min-height: 0px; transform: scale(1, 1) rotate(0deg); opacity: 0; left: 214px; top: 224px; visibility: visible;">The Amazing App Mojo is here. Promote your app <br> the way you like. All the features you need is here.
+                                    </div>
+
+                                    <div class="tp-caption custom_content lfb start" data-x="0" data-y="303" data-speed="1000" data-start="3500" data-easing="easeOutExpo" style="font-size: 16px; padding: 0px; margin: 0px; border-width: 0px; line-height: 26px; white-space: nowrap; min-width: 0px; min-height: 0px; transform: scale(1, 1) rotate(0deg); opacity: 1; left: 264px; top: 950px; visibility: visible;"><a class="button small" href="#">Purchase Now <span class="icon-caret-right"></span></a>
+                                    </div>
+                                </li>
+
+                                <li data-transition="random" data-slotamount="7" data-masterspeed="300" style="width: 100%; height: 100%; overflow: hidden; visibility: visible; left: 0px; top: 0px; z-index: 20; opacity: 1; position: absolute;">
+                                    <div class="slotholder"><img src="http://placehold.it/1920x570" alt="slider-bg2" class="defaultimg" style="width: 1920px; height: 570px; position: absolute; top: 0px; left: -226px; opacity: 1;"></div>
+                                    <div class="tp-caption lfb start" data-x="0" data-y="48" data-speed="1000" data-start="1000" data-easing="easeOutExpo" style="top: 48px; transform: scale(1, 1) rotate(0deg); opacity: 1; left: 264px; visibility: visible;"><img src="http://placehold.it/616x521" alt="Image 1" style="width: 616px; height: 521px;">
+                                    </div>
+
+                                    <div class="tp-caption custom_title lft start" data-x="650" data-y="120" data-speed="1000" data-start="1500" data-easing="easeOutExpo" style="top: 120px; font-size: 30px; padding: 0px; margin: 0px; border-width: 0px; line-height: 36px; white-space: nowrap; min-width: 0px; min-height: 0px; transform: scale(1, 1) rotate(0deg); opacity: 1; left: 914px; visibility: visible; transition: opacity 1000ms cubic-bezier(0.19, 1, 0.22, 1) 0s, left 1000ms cubic-bezier(0.19, 1, 0.22, 1) 0s, top 1000ms cubic-bezier(0.19, 1, 0.22, 1) 0s;">Features of AppMojo
+                                    </div>
+
+                                    <div class="tp-caption custom_contenttext sfr start" data-x="677" data-y="182" data-speed="1000" data-start="2000" data-easing="easeOutExpo" style="font-size: 16px; padding: 0px; margin: 0px; border-width: 0px; line-height: 26px; white-space: nowrap; min-width: 0px; min-height: 0px; transform: scale(1, 1) rotate(0deg); opacity: 1; left: 941px; top: 182px; visibility: visible; transition: opacity 1000ms cubic-bezier(0.19, 1, 0.22, 1) 0s, left 1000ms cubic-bezier(0.19, 1, 0.22, 1) 0s, top 1000ms cubic-bezier(0.19, 1, 0.22, 1) 0s;">Smooth Scrolling
+                                    </div>
+
+                                    <div class="tp-caption fade start" data-x="650" data-y="188" data-speed="1000" data-start="2000" data-easing="easeInCubic" style="opacity: 1; left: 914px; top: 188px; transform: scale(1, 1) rotate(0deg); visibility: visible; transition: opacity 1000ms ease 0s;"><img src="images/revolution/tick.png" alt="Image 4" style="width: 16px; height: 11px;">
+                                    </div>
+
+                                    <div class="tp-caption fade start" data-x="650" data-y="228" data-speed="1000" data-start="2500" data-easing="easeInQuad" style="opacity: 0; left: 914px; top: 228px; transform: scale(1, 1) rotate(0deg); visibility: visible;"><img src="images/revolution/tick.png" alt="Image 4" style="width: 16px; height: 11px;">
+                                    </div>
+
+                                    <div class="tp-caption custom_contenttext sfr start" data-x="677" data-y="222" data-speed="1000" data-start="2500" data-easing="easeOutExpo" style="font-size: 16px; padding: 0px; margin: 0px; border-width: 0px; line-height: 26px; white-space: nowrap; min-width: 0px; min-height: 0px; transform: scale(1, 1) rotate(0deg); opacity: 0; left: 991px; top: 222px; visibility: visible;">Animation Effects
+                                    </div>
+
+                                    <div class="tp-caption fade start" data-x="650" data-y="268" data-speed="1000" data-start="2800" data-easing="easeInQuad" style="opacity: 0; left: 914px; top: 268px; transform: scale(1, 1) rotate(0deg); visibility: visible;"><img src="images/revolution/tick.png" alt="Image 4" style="width: 16px; height: 11px;">
+                                    </div>
+
+                                    <div class="tp-caption custom_contenttext sfr start" data-x="677" data-y="262" data-speed="1000" data-start="3100" data-easing="easeOutExpo" style="font-size: 16px; padding: 0px; margin: 0px; border-width: 0px; line-height: 26px; white-space: nowrap; min-width: 0px; min-height: 0px; transform: scale(1, 1) rotate(0deg); opacity: 0; left: 991px; top: 262px; visibility: visible;">Tons of Customization
+                                    </div>
+
+                                    <div class="tp-caption fade start" data-x="650" data-y="308" data-speed="1000" data-start="3400" data-easing="easeInQuad" style="opacity: 0; left: 914px; top: 308px; transform: scale(1, 1) rotate(0deg); visibility: visible;"><img src="images/revolution/tick.png" alt="Image 4" style="width: 16px; height: 11px;">
+                                    </div>
+
+                                    <div class="tp-caption custom_contenttext sfr start" data-x="677" data-y="302" data-speed="1000" data-start="3700" data-easing="easeOutExpo" style="font-size: 16px; padding: 0px; margin: 0px; border-width: 0px; line-height: 26px; white-space: nowrap; min-width: 0px; min-height: 0px; transform: scale(1, 1) rotate(0deg); opacity: 0; left: 991px; top: 302px; visibility: visible;">Completely Responsive
+                                    </div>
+
+                                    <div class="tp-caption fade start" data-x="650" data-y="348" data-speed="1000" data-start="4000" data-easing="easeInQuad" style="opacity: 0; left: 914px; top: 348px; transform: scale(1, 1) rotate(0deg); visibility: visible;"><img src="images/revolution/tick.png" alt="Image 4" style="width: 16px; height: 11px;">
+                                    </div>
+
+                                    <div class="tp-caption custom_contenttext sfr start" data-x="677" data-y="342" data-speed="1000" data-start="4300" data-easing="easeOutExpo" style="font-size: 16px; padding: 0px; margin: 0px; border-width: 0px; line-height: 26px; white-space: nowrap; min-width: 0px; min-height: 0px; transform: scale(1, 1) rotate(0deg); opacity: 0; left: 991px; top: 342px; visibility: visible;">20 Predefined Skins
+                                    </div>
+
+                                    <div class="tp-caption fade start" data-x="650" data-y="388" data-speed="1000" data-start="4600" data-easing="easeInQuad" style="opacity: 0; left: 914px; top: 388px; transform: scale(1, 1) rotate(0deg); visibility: visible;"><img src="images/revolution/tick.png" alt="Image 4" style="width: 16px; height: 11px;">
+                                    </div>
+
+                                    <div class="tp-caption custom_contenttext sfr start" data-x="677" data-y="382" data-speed="1000" data-start="4900" data-easing="easeOutExpo" style="font-size: 16px; padding: 0px; margin: 0px; border-width: 0px; line-height: 26px; white-space: nowrap; min-width: 0px; min-height: 0px; transform: scale(1, 1) rotate(0deg); opacity: 0; left: 991px; top: 382px; visibility: visible;">2 Premium Sliders <br> (Layer &amp; Revolution Slider)
+                                    </div>
+
+                                    <div class="tp-caption sft start" data-x="430" data-y="58" data-speed="300" data-start="1300" data-easing="easeInOutBounce" style="transform: scale(1, 1) rotate(0deg); opacity: 1; left: 694px; top: 58px; visibility: visible;"><img src="images/revolution/bulb.png" alt="Image 15" style="width: 77px; height: 69px;">
+                                    </div>
+
+                                </li>
+                            </ul>
+
+                            <div class="tp-loader" style="display: none;"></div>
+                            <div class="tp-bannertimer" style="visibility: hidden; width: 27.6517%; overflow: hidden;"></div>
+                        </div>
+
+                        <div style="position: absolute; top: 285px; margin-top: -20px; left: 20px;" class="tp-leftarrow tparrows default hidearrows"></div>
+                        <div style="position: absolute; top: 285px; margin-top: -20px; right: 20px;" class="tp-rightarrow tparrows default hidearrows"></div>
+                    </div>
+                    <div class="shadow"></div>
+                    <div class="container">
+                        <div class="aligncenter welcome">
+                            <div class="margin35"></div>
+                            <h1>Now its up to you to decide</h1>
+                            <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor
+                                repellendus. </p>
+                            <div class="margin20"></div>
+                            <a href="#" class="button small animate" data-animation="bounceIn" data-delay="100">Purchase Now <span class="icon-caret-right"></span></a>
+                        </div>
+                    </div>
+                </section>
+                <!-- home section Ends here -->
+                <!-- services section Starts here -->
+                <section id="services" class="content">
+                    <div class="main-title">
+                        <div class="container">
+                            <h2>Services</h2>
+                        </div>
+                    </div>
+                    <div class="content-main">
+                        <div class="container">
+                            <div class="one-fourth column no-space">
+                                <div class="service">
+                                    <i class="icon-laptop animate" data-animation="rollIn" data-delay="100"></i>
+                                    <div class="margin20"></div>
+                                    <h4>Clean &amp; Sleek Design</h4>
+                                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eiu modi tempora.</p>
+                                </div>
+                            </div>
+                            <div class="one-fourth column no-space">
+                                <div class="service">
+                                    <i class="icon-mobile-phone special animate" data-animation="rollIn" data-delay="300"></i>
+                                    <div class="margin20"></div>
+                                    <h4>Ultra Responsive</h4>
+                                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eiu modi tempora.</p>
+                                </div>
+                            </div>
+                            <div class="one-fourth column no-space">
+                                <div class="service">
+                                    <i class="icon-magic special animate" data-animation="rollIn" data-delay="500"></i>
+                                    <div class="margin20"></div>
+                                    <h4>Magic Touch</h4>
+                                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eiu modi tempora.</p>
+                                </div>
+                            </div>
+                            <div class="one-fourth column no-space last">
+                                <div class="service">
+                                    <i class="icon-comments special animate" data-animation="rollIn" data-delay="700"></i>
+                                    <div class="margin20"></div>
+                                    <h4>Dedicated Support</h4>
+                                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eiu modi tempora.</p>
+                                </div>
+                            </div>
+                            <div class="margin50"></div>
+                            <h2 class="border-title">What do we provide?<span></span></h2>
+                            <div class="margin15"></div>
+                            <div class="tabs-vertical-container">
+                                <ul class="tabs-vertical-frame one-third column">
+                                    <li class="current">
+                                        <a href="#" class="current"> <span> 1</span> Flexible App </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span> 2</span> Powerful Admin Panel </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span> 3</span> Best Inbuilt features </a>
+                                    </li>
+                                </ul>
+                                <div class="tabs-vertical-frame-content two-third column last" style="display: block;">
+                                    <h3> Flexible App </h3>
+                                    <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est,
+                                        omnis dolor repellendus. </p>
+                                    <p> Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. </p>
+                                </div>
+                                <div class="tabs-vertical-frame-content two-third column last" style="display: none;">
+                                    <h3> Powerful Admin Panel </h3>
+                                    <p> Morbi vel elit magna, at laoreet eros. Nullam non lectus fringilla nisl tincidunt pellentesque. Vivamus odio velit, laoreet ac molestie nec, sodales at quam. Nullam pellentesque tristique tristique.</p>
+                                    <p> Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                                </div>
+                                <div class="tabs-vertical-frame-content two-third column last" style="display: none;">
+                                    <h3> Best Inbuilt features </h3>
+                                    <p> Pellentesque augue lacus, porta vel ultricies vitae, ullamcorper eget purus. Aliquam risus mauris, suscipit eget scelerisque in, dapibus at mauris. </p>
+                                    <p> Ut euismod dapibus tempor. Nulla metus metus, interdum et fringilla eget, rutrum facilisis ante. Nullam convallis metus elit, ac commodo est. </p>
+                                </div>
+                            </div>
+                            <div class="margin30"></div>
+                            <h2 class="border-title">Testimonials<span></span></h2>
+                            <div class="margin25"></div>
+                            <div class="testimonial-wrapper">
+                                <div class="quovolve-box play">
+                                    <ul class="quotes_wrapper quovolve" style="position: relative; height: auto;">
+                                        <li style="display: none; height: 206px;">
+                                            <figure class="testimonial-thumb animate" data-animation="fadeInUp">
+                                                <span class="item-mask"> </span>
+                                                <img class="thumb-image" src="http://placehold.it/180x206" alt="" title="" width="180" height="206">
+                                            </figure>
+                                            <div class="testimonial-content-wrapper">
+                                                <div class="author-meta">
+                                                    <p>Mathew Braveheart</p>
+                                                    <span>Senior Director</span>
+                                                </div>
+                                                <blockquote> Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda
+                                                    est, omnis dolor repellendus. </blockquote>
+                                            </div>
+                                        </li>
+                                        <li style="display: list-item; height: 206px;">
+                                            <figure class="testimonial-thumb alignright animate fadeInUp" data-animation="fadeInUp">
+                                                <span class="item-mask"> </span>
+                                                <img class="thumb-image" src="http://placehold.it/180x206" alt="" title="" width="180" height="206">
+                                            </figure>
+                                            <div class="testimonial-content-wrapper">
+                                                <div class="author-meta">
+                                                    <p>Stephen Hawking</p>
+                                                    <span>Senior Scientist</span>
+                                                </div>
+                                                <blockquote> Owners of dogs will have noticed that, if you provide them with food and water and shelter and affection, they will think you are god. Whereas owners of cats are compelled to realize that, if you provide
+                                                    them with food and water and shelter. </blockquote>
+                                            </div>
+                                        </li>
+                                        <li style="display: none; height: 206px;">
+                                            <figure class="testimonial-thumb animate fadeInUp" data-animation="fadeInUp">
+                                                <span class="item-mask"> </span>
+                                                <img class="thumb-image" src="http://placehold.it/180x206" alt="" title="" width="180" height="206">
+                                            </figure>
+                                            <div class="testimonial-content-wrapper">
+                                                <div class="author-meta">
+                                                    <p>Isaac Newton</p>
+                                                    <span>Senior Scientist</span>
+                                                </div>
+                                                <blockquote> Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda
+                                                    est, omnis dolor repellendus. </blockquote>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="quovolve-nav quovolve-nav-below">
+                                        <ol class="nav-numbers">
+                                            <li class=""><a href="#item-1">1</a></li>
+                                            <li class="active"><a href="#item-2">2</a></li>
+                                            <li class=""><a href="#item-3">3</a></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- services section Ends here -->
+                <!-- features section Starts here -->
+                <section id="features" class="content">
+                    <div class="main-title">
+                        <div class="container">
+                            <h2>Features</h2>
+                        </div>
+                    </div>
+                    <div class="content-main">
+                        <div class="container">
+                            <div class="one-half column">
+                                <img src="images/mobile-view-map.png" alt="mobilemap" title="" class="aligncenter rollImage animate" data-animation="fadeInLeft">
+                            </div>
+                            <div class="one-half column last">
+                                <div class="custom-services">
+                                    <span class="icon-one animate" data-animation="bounceIn"></span>
+                                    <h3>The Distinguished</h3>
+                                    <p>We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire.</p>
+                                </div>
+                                <div class="margin35"></div>
+                                <div class="custom-services">
+                                    <span class="icon-eight animate" data-animation="bounceIn"></span>
+                                    <h3> Highly Responsive </h3>
+                                    <p>We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire.</p>
+                                </div>
+                                <div class="margin35"></div>
+                                <div class="custom-services">
+                                    <span class="icon-nine animate" data-animation="bounceIn"></span>
+                                    <h3> Multiple Sliders </h3>
+                                    <p>We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire.</p>
+                                </div>
+                            </div>
+                            <div class="margin65"></div>
+                            <div class="one-half column pull-up">
+                                <div class="custom-services">
+                                    <span class="icon-two animate" data-animation="bounceIn"></span>
+                                    <h3>cPanel Included</h3>
+                                    <p>We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire.</p>
+                                </div>
+                                <div class="margin35"></div>
+                                <div class="custom-services">
+                                    <span class="icon-three animate" data-animation="bounceIn"></span>
+                                    <h3>Latest Software</h3>
+                                    <p>We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire.</p>
+                                </div>
+                                <div class="margin35"></div>
+                                <div class="custom-services">
+                                    <span class="icon-four animate" data-animation="bounceIn"></span>
+                                    <h3>Chat Support</h3>
+                                    <p>We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire.</p>
+                                </div>
+                            </div>
+                            <div class="one-half column last">
+                                <img src="images/mobile-two.png" alt="mobiletwo" title="" class="aligncenter fadeImage animate" data-animation="fadeInRight">
+                            </div>
+                            <div class="margin90"></div>
+                            <div class="one-third column">
+                                <div class="custom-services">
+                                    <span class="icon-five animate bounceIn" data-animation="bounceIn"></span>
+                                    <h3>Instant Setup</h3>
+                                    <p>We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain.</p>
+                                </div>
+                            </div>
+                            <div class="one-third column">
+                                <div class="custom-services">
+                                    <span class="icon-six animate bounceIn" data-animation="bounceIn"></span>
+                                    <h3>Better Backup</h3>
+                                    <p>We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain.</p>
+                                </div>
+                            </div>
+                            <div class="one-third column last">
+                                <div class="custom-services">
+                                    <span class="icon-seven animate bounceIn" data-animation="bounceIn"></span>
+                                    <h3>Reliable Speed</h3>
+                                    <p>We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- features section Ends here -->
+                <!-- pricing section Starts here -->
+                <section id="pricing" class="content">
+                    <div class="main-title">
+                        <div class="container">
+                            <h2>Pricing Table</h2>
+                        </div>
+                    </div>
+                    <div class="content-main">
+                        <div class="container">
+                            <div class="one-third column">
+                                <div class="pr-tb-col animate" data-animation="flipInY">
+                                    <div class="tb-header">
+                                        <div class="tb-title">
+                                            <h5>High</h5>
+                                        </div>
+                                        <div class="price"> $40 <span> Per Month</span> </div>
+                                        <div class="guarantee">
+                                            <p>Money back Gurantee</p>
+                                        </div>
+                                    </div>
+                                    <ul class="tb-content">
+                                        <li>Virtual Private Server hosting now with double the RAM at no additional cost.</li>
+                                        <li><strong>Great for:</strong> Small Businesses, Resellers, Devs, Designers</li>
+                                        <li>Single Domain</li>
+                                        <li>UNLIMITED Disk Space</li>
+                                        <li>UNLIMITED Disk Space</li>
+                                    </ul>
+                                    <div class="buy-now">
+                                        <a class="button small" href="#">Learn More <span class="icon-caret-right"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="one-third column">
+                                <div class="pr-tb-col active animate" data-animation="flipInY">
+                                    <div class="tb-header">
+                                        <div class="tb-title">
+                                            <h5>Medium</h5>
+                                        </div>
+                                        <div class="price"> $30 <span> Per Month</span> </div>
+                                        <div class="guarantee">
+                                            <p>Money back Gurantee</p>
+                                        </div>
+                                    </div>
+                                    <ul class="tb-content">
+                                        <li>Virtual Private Server hosting now with double the RAM at no additional cost.</li>
+                                        <li><strong>Great for:</strong> Small Businesses, Resellers, Devs, Designers</li>
+                                        <li>Single Domain</li>
+                                        <li>UNLIMITED Disk Space</li>
+                                        <li>UNLIMITED Disk Space</li>
+                                    </ul>
+                                    <div class="buy-now">
+                                        <a class="button small" href="#">Learn More <span class="icon-caret-right"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="one-third column last active">
+                                <div class="pr-tb-col animate" data-animation="flipInY">
+                                    <div class="tb-header">
+                                        <div class="tb-title">
+                                            <h5>Basic</h5>
+                                        </div>
+                                        <div class="price"> $20 <span> Per Month</span> </div>
+                                        <div class="guarantee">
+                                            <p>Money back Gurantee</p>
+                                        </div>
+                                    </div>
+                                    <ul class="tb-content">
+                                        <li>Virtual Private Server hosting now with double the RAM at no additional cost.</li>
+                                        <li><strong>Great for:</strong> Small Businesses, Resellers, Devs, Designers</li>
+                                        <li>Single Domain</li>
+                                        <li>UNLIMITED Disk Space</li>
+                                        <li>UNLIMITED Disk Space</li>
+                                    </ul>
+                                    <div class="buy-now">
+                                        <a class="button small" href="#">Learn More <span class="icon-caret-right"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="margin75"></div>
+                            <h2 class="border-title">Special Offers<span></span></h2>
+                            <div class="margin30"></div>
+                            <div class="one-fourth column">
+                                <div class="progress-bar-wrapper">
+                                    <div id="donutchart1" data-percent="12" style="position: relative; width: 140px; height: 140px;"><canvas width="140" height="140"></canvas>
+                                        <div style="position:absolute;top:0;left:0;line-height:140px;text-align:center;width:140px;font-size:15px;">Save<br><span>12%</span></div>
+                                    </div>
+                                    <div class="progress-bar-content">
+                                        <h4>monthly</h4>
+                                        <span class="code">Code: XF235</span>
+                                        <p>Has been the industry's standard dummy text ever since the 1500s.</p>
+                                        <a href="#" class="button small red"> Select <span class="icon-caret-right"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="one-fourth column">
+                                <div class="progress-bar-wrapper">
+                                    <div id="donutchart2" data-percent="25" style="position: relative; width: 140px; height: 140px;"><canvas width="140" height="140"></canvas>
+                                        <div style="position:absolute;top:0;left:0;line-height:140px;text-align:center;width:140px;font-size:15px;">Save<br><span>25%</span></div>
+                                    </div>
+                                    <div class="progress-bar-content">
+                                        <h4>Quarterly</h4>
+                                        <span class="code">Code: XF235</span>
+                                        <p>Has been the industry's standard dummy text ever since the 1500s.</p>
+                                        <a href="#" class="button small coral"> Select <span class="icon-caret-right"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="one-fourth column">
+                                <div class="progress-bar-wrapper">
+                                    <div id="donutchart3" data-percent="35" style="position: relative; width: 140px; height: 140px;"><canvas width="140" height="140"></canvas>
+                                        <div style="position:absolute;top:0;left:0;line-height:140px;text-align:center;width:140px;font-size:15px;">Save<br><span>35%</span></div>
+                                    </div>
+                                    <div class="progress-bar-content">
+                                        <h4>Half Yearly</h4>
+                                        <span class="code">Code: XF235</span>
+                                        <p>Has been the industry's standard dummy text ever since the 1500s.</p>
+                                        <a href="#" class="button small green"> Select <span class="icon-caret-right"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="one-fourth column last">
+                                <div class="progress-bar-wrapper">
+                                    <div id="donutchart4" data-percent="50" style="position: relative; width: 140px; height: 140px;"><canvas width="140" height="140"></canvas>
+                                        <div style="position:absolute;top:0;left:0;line-height:140px;text-align:center;width:140px;font-size:15px;">Save<br><span>50%</span></div>
+                                    </div>
+                                    <div class="progress-bar-content">
+                                        <h4>Yearly</h4>
+                                        <span class="code">Code: XF235</span>
+                                        <p>Has been the industry's standard dummy text ever since the 1500s.</p>
+                                        <a href="#" class="button small blue"> Select <span class="icon-caret-right"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="margin80"></div>
+                            <div class="newsletter-container">
+                                <h2>Newsletter</h2>
+                                <div class="one-half column">
+                                    <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere.</p>
+                                </div>
+                                <div class="one-half column last">
+                                    <form name="frmnewsletter" class="newsletter-form" action="php/subscribe.php" method="post" novalidate="novalidate">
+                                        <input type="email" required="" placeholder="Email Address" name="mc_email">
+                                        <input type="submit" value="subscribe" class="button" name="btnsubscribe">
+                                    </form>
+                                    <div id="ajax_subscribe_msg"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- pricing section Ends here -->
+                <!-- about section Starts here -->
+                <section id="about" class="content">
+                    <div class="main-title">
+                        <div class="container">
+                            <h2>About</h2>
+                        </div>
+                    </div>
+                    <div class="content-main">
+                        <div class="container">
+                            <img src="http://placehold.it/923x447" alt="about" title="" class="aligncenter aboutImg animate" data-animation="fadeInDown">
+                            <div class="margin30"></div>
+                            <div class="one-half column">
+                                <h4 class="border-title">How it is the best App?<span></span></h4>
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in
+                                    culpa qui officia deserunt mollitia animi.</p>
+                                <div class="margin60"></div>
+                                <img src="images/bar-chart.png" alt="chart" title="" class="chart animate" data-animation="stretchRight">
+                            </div>
+                            <div class="one-half column last">
+                                <h4 class="border-title">Get connected and let know what you do.<span></span></h4>
+                                <p>d est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis
+                                    voluptas assumenda est, omnis dolor repellendus. </p>
+                                <div class="margin60"></div>
+                                <h2 class="border-title">Our Growth<span></span></h2>
+                                <p>d est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis
+                                    voluptas assumenda est, omnis dolor repellendus. </p>
+                                <div class="legend-wrapper">
+                                    <div class="orange legend">
+                                        <div class="legendColorBox">
+                                            <div></div>
+                                        </div>
+                                        <div class="legendLabel">
+                                            <span>Production</span>
+                                        </div>
+                                    </div>
+                                    <div class="blue legend">
+                                        <div class="legendColorBox">
+                                            <div></div>
+                                        </div>
+                                        <div class="legendLabel">
+                                            <span>Production</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="margin75"></div>
+                            </div>
+                        </div>
+                        <div class="intro-text">
+                            <div class="container">
+                                <h2>Now its up to you to decide</h2>
+                                <div class="margin10"></div>
+                                <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis
+                                    dolor repellendus. </p>
+                                <div class="margin25"></div>
+                                <div class="demo-btn">
+                                    <a href="#" class="purchase">purchase</a>
+                                    <span>or</span>
+                                    <a href="#" class="demo">view demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="margin85"></div>
+                        <div class="container">
+                            <h2 class="border-title">Slideshow Sample<span></span></h2>
+                            <div class="margin30"></div>
+                            <div class="bottom-slider">
+                                <div id="layerslider-container">
+
+                                    <div id="layerslider" style="margin: 0px auto; width: 940px; height: 500px; visibility: visible;" class="ls-container ls-borderlessdark3d">
+                                        <div class="ls-webkit-hack"></div>
+
+                                        <div class="ls-inner" style="background-color: transparent; width: 940px; height: 500px;">
+                                            <div class="ls-lt-container" style="width: 940px; height: 500px;">
+                                                <div class="ls-curtiles" style="overflow: visible;">
+                                                    <div class="ls-lt-tile" style="width: 314px; height: 250px; overflow: visible;">
+                                                        <div class="ls-curtile" style="transition: top 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1000ms, left 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1000ms, km-rotate 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1000ms, km-scale 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1000ms, opacity 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1000ms; top: 0px; left: -157px; opacity: 0;"><img src="http://placehold.it/940x500" style="width: 940px; height: 500px; margin-left: 0px; margin-top: 0px;"></div>
+                                                    </div>
+                                                    <div class="ls-lt-tile" style="width: 313px; height: 250px; overflow: visible;">
+                                                        <div class="ls-curtile" style="transition: top 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1035ms, left 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1035ms, km-rotate 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1035ms, km-scale 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1035ms, opacity 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1035ms; top: 0px; left: -156.5px; opacity: 0;"><img src="http://placehold.it/940x500" style="width: 940px; height: 500px; margin-left: -314px; margin-top: 0px;"></div>
+                                                    </div>
+                                                    <div class="ls-lt-tile" style="width: 313px; height: 250px; overflow: visible;">
+                                                        <div class="ls-curtile" style="transition: top 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1070ms, left 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1070ms, km-rotate 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1070ms, km-scale 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1070ms, opacity 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1070ms; top: 0px; left: -156.5px; opacity: 0;"><img src="http://placehold.it/940x500" style="width: 940px; height: 500px; margin-left: -627px; margin-top: 0px;"></div>
+                                                    </div>
+                                                    <div class="ls-lt-tile" style="width: 314px; height: 250px; overflow: visible;">
+                                                        <div class="ls-curtile" style="transition: top 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1105ms, left 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1105ms, km-rotate 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1105ms, km-scale 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1105ms, opacity 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1105ms; top: 0px; left: -157px; opacity: 0;"><img src="http://placehold.it/940x500" style="width: 940px; height: 500px; margin-left: 0px; margin-top: -250px;"></div>
+                                                    </div>
+                                                    <div class="ls-lt-tile" style="width: 313px; height: 250px; overflow: visible;">
+                                                        <div class="ls-curtile" style="transition: top 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1140ms, left 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1140ms, km-rotate 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1140ms, km-scale 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1140ms, opacity 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1140ms; top: 0px; left: -156.5px; opacity: 0;"><img src="http://placehold.it/940x500" style="width: 940px; height: 500px; margin-left: -314px; margin-top: -250px;"></div>
+                                                    </div>
+                                                    <div class="ls-lt-tile" style="width: 313px; height: 250px; overflow: visible;">
+                                                        <div class="ls-curtile" style="transition: top 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1175ms, left 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1175ms, km-rotate 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1175ms, km-scale 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1175ms, opacity 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1175ms; top: 0px; left: -156.5px; opacity: 0;"><img src="http://placehold.it/940x500" style="width: 940px; height: 500px; margin-left: -627px; margin-top: -250px;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="ls-nexttiles">
+                                                    <div class="ls-lt-tile" style="width: 314px; height: 250px; overflow: visible;">
+                                                        <div class="ls-nexttile" style="top: 0px; left: 0px; opacity: 1; transition: top 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1000ms, left 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1000ms, opacity 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1000ms, km-rotate 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1000ms, transform 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1000ms, km-scale 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1000ms;"><img src="http://placehold.it/940x500" style="width: 940px; height: 500px; margin-left: 0px; margin-top: 0px;"></div>
+                                                    </div>
+                                                    <div class="ls-lt-tile" style="width: 313px; height: 250px; overflow: visible;">
+                                                        <div class="ls-nexttile" style="top: 0px; left: 0px; opacity: 1; transition: top 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1035ms, left 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1035ms, opacity 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1035ms, km-rotate 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1035ms, transform 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1035ms, km-scale 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1035ms;"><img src="http://placehold.it/940x500" style="width: 940px; height: 500px; margin-left: -314px; margin-top: 0px;"></div>
+                                                    </div>
+                                                    <div class="ls-lt-tile" style="width: 313px; height: 250px; overflow: visible;">
+                                                        <div class="ls-nexttile" style="top: 0px; left: 0px; opacity: 1; transition: top 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1070ms, left 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1070ms, opacity 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1070ms, km-rotate 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1070ms, transform 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1070ms, km-scale 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1070ms;"><img src="http://placehold.it/940x500" style="width: 940px; height: 500px; margin-left: -627px; margin-top: 0px;"></div>
+                                                    </div>
+                                                    <div class="ls-lt-tile" style="width: 314px; height: 250px; overflow: visible;">
+                                                        <div class="ls-nexttile" style="top: 0px; left: 0px; opacity: 1; transition: top 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1105ms, left 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1105ms, opacity 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1105ms, km-rotate 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1105ms, transform 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1105ms, km-scale 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1105ms;"><img src="http://placehold.it/940x500" style="width: 940px; height: 500px; margin-left: 0px; margin-top: -250px;"></div>
+                                                    </div>
+                                                    <div class="ls-lt-tile" style="width: 313px; height: 250px; overflow: visible;">
+                                                        <div class="ls-nexttile" style="top: 0px; left: 0px; opacity: 1; transition: top 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1140ms, left 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1140ms, opacity 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1140ms, km-rotate 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1140ms, transform 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1140ms, km-scale 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1140ms;"><img src="http://placehold.it/940x500" style="width: 940px; height: 500px; margin-left: -314px; margin-top: -250px;"></div>
+                                                    </div>
+                                                    <div class="ls-lt-tile" style="width: 313px; height: 250px; overflow: visible;">
+                                                        <div class="ls-nexttile" style="top: 0px; left: 0px; opacity: 1; transition: top 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1175ms, left 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1175ms, opacity 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1175ms, km-rotate 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1175ms, transform 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1175ms, km-scale 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 1175ms;"><img src="http://placehold.it/940x500" style="width: 940px; height: 500px; margin-left: -627px; margin-top: -250px;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ls-layer ls-animating" style="width: 0px; height: 500px; visibility: visible; display: none; inset: 0px 0px auto auto;">
+                                                <img src="http://placehold.it/940x500" class="ls-bg" alt="Slide background" style="padding: 0px; border-width: 0px; width: 940px; height: 500px; margin-left: -470px; margin-top: -250px; visibility: hidden;">
+                                                <h2 class="ls-s-1 ls1" style="position: absolute; top: 157px; left: 74px; width: auto; height: auto; font-size: 30px; padding: 5px 30px 5px 20px; border-width: 0px; opacity: 1; margin-left: 0px; margin-top: 344px; display: block; visibility: visible;">
+                                                    Features of App-Mojo
+                                                </h2>
+                                                <img class="ls-s-1" alt="" title="" src="http://placehold.it/508x642" style="position: absolute; top: -23px; left: 381px; width: 508px; height: 642px; padding: 0px; border-width: 0px; opacity: 1; margin-left: 0px; margin-top: -620px; display: block; visibility: visible;">
+                                                <h4 class="ls-s-1 ls1" style="position: absolute; top: 235px; left: 94px; width: auto; height: auto; font-size: 18px; padding: 0px; border-width: 0px; opacity: 1; margin-left: 847px; margin-top: 0px; display: block; visibility: visible;">
+                                                    Customizable to any website
+                                                </h4>
+                                                <h4 class="ls-s-1 ls1" style="position: absolute; top: 270px; left: 94px; width: auto; height: auto; font-size: 18px; padding: 0px; border-width: 0px; opacity: 1; margin-left: 847px; margin-top: 0px; display: block; visibility: visible;">
+                                                    Various website element
+                                                </h4>
+                                                <h4 class="ls-s-1 ls1" style="position: absolute; top: 305px; left: 94px; width: auto; height: auto; font-size: 18px; padding: 0px; border-width: 0px; opacity: 1; margin-left: 847px; margin-top: 0px; display: block; visibility: visible;">
+                                                    Comes in 2 types of PSD
+                                                </h4>
+                                            </div>
+                                            <div class="ls-layer" style="width: 0px; height: 500px; visibility: visible; display: none; inset: 0px auto auto 0px;">
+                                                <img src="http://placehold.it/940x500" class="ls-bg" alt="Slide background" style="padding: 0px; border-width: 0px; width: 940px; height: 500px; margin-left: -470px; margin-top: -250px; visibility: visible;">
+                                                <img class="ls-s-1" alt="" title="" src="http://placehold.it/661x495" style="position: absolute; top: 43px; left: -68px; width: 661px; height: 495px; padding: 0px; border-width: 0px; opacity: 1; margin-left: 1009px; margin-top: 0px; display: block; visibility: visible;">
+                                                <img class="ls-s-1" alt="" title="" src="images/layerslider/bubble-text.png" style="position: absolute; top: 38px; left: 613px; width: 302px; height: 167px; padding: 0px; border-width: 0px; opacity: 1; visibility: hidden; margin-left: 0px; margin-top: 0px;">
+                                                <h3 class="ls-s-1 ls2" style="position: absolute; top: 351px; left: 615px; width: auto; height: auto; font-size: 24px; padding: 5px 20px; border-width: 0px; opacity: 1; margin-left: -920px; margin-top: 0px; display: block; visibility: visible;">
+                                                    Layer &amp; Revolution Sliders
+                                                </h3>
+                                                <h5 class="ls-s-1 ls2" style="position: absolute; top: 411px; left: 718px; width: auto; height: auto; font-size: 18px; padding: 0px; border-width: 0px; opacity: 1; margin-left: 0px; margin-top: -435px; display: block; visibility: visible;">
+                                                    $25 Worth Sliders Included
+                                                </h5>
+                                                <img class="ls-s-1" alt="" title="" src="images/layerslider/rocket2.png" style="position: absolute; top: 399px; left: 474px; width: 71px; height: 72px; padding: 0px; border-width: 0px; opacity: 1; margin-left: 0px; margin-top: -472px; display: block; visibility: visible;">
+                                                <img class="ls-s-1" alt="" title="" src="images/layerslider/rocket1.png" style="position: absolute; top: 258px; left: 627px; width: 75px; height: 69px; padding: 0px; border-width: 0px; opacity: 1; margin-left: -703px; margin-top: 0px; display: block; visibility: visible;">
+                                                <img class="ls-s-1" alt="" title="" src="images/layerslider/rocket4.png" style="position: absolute; top: 437px; left: 632px; width: 50px; height: 41px; padding: 0px; border-width: 0px; opacity: 1; margin-left: 0px; margin-top: -479px; display: block; visibility: visible;">
+                                                <img class="ls-s-1" alt="" title="" src="images/layerslider/rocket3.png" style="position: absolute; top: 242px; left: 848px; width: 39px; height: 52px; padding: 0px; border-width: 0px; opacity: 1; margin-left: -888px; margin-top: 0px; display: block; visibility: visible;">
+                                            </div>
+                                            <div class="ls-layer ls-active" style="width: 0px; height: 500px; inset: 0px auto auto 0px; visibility: visible; display: none;">
+                                                <img src="http://placehold.it/940x500" class="ls-bg" alt="Slide background" style="padding: 0px; border-width: 0px; width: 940px; height: 500px; margin-left: -470px; margin-top: -250px; visibility: visible;">
+                                                <img class="ls-s-1" alt="" title="" src="http://placehold.it/955x232" style="position: absolute; top: 263px; left: -9px; width: 955px; height: 232px; padding: 0px; border-width: 0px; opacity: 1; margin-left: 0px; margin-top: -496px; display: block; visibility: visible;">
+                                                <img class="ls-s-1" alt="" title="" src="images/layerslider/rocket-lines.png" style="position: absolute; top: 86px; left: 131px; width: 222px; height: 158px; padding: 0px; border-width: 0px; opacity: 1; margin-left: 810px; margin-top: 0px; display: block; visibility: visible;">
+                                                <h2 class="ls-s-1 ls3" style="position: absolute; top: 64px; left: 366px; width: auto; height: auto; font-size: 24px; padding: 5px 40px; border-width: 0px; opacity: 1; margin-left: 0px; margin-top: 437px; display: block; visibility: visible;">
+                                                    100% Responsive
+                                                </h2>
+                                                <h3 class="ls-s-1 ls3" style="position: absolute; top: 121px; left: 366px; width: auto; height: auto; font-size: 30px; padding: 0px; border-width: 0px; opacity: 1; margin-left: 0px; margin-top: -168px; display: block; visibility: visible;">
+                                                    View on any Devices
+                                                </h3>
+                                            </div>
+                                        </div>
+
+
+
+
+
+                                        <div class="ls-loading-container" style="z-index: -1; display: none;">
+                                            <div class="ls-loading-indicator"></div>
+                                        </div>
+                                        <a class="ls-nav-prev" href="#" style="display: none; visibility: visible;"></a>
+                                        <a class="ls-nav-next" href="#" style="display: none; visibility: visible;"></a>
+                                        <div class="ls-bottom-nav-wrapper" style="visibility: visible;">
+                                            <a class="ls-nav-start ls-nav-start-active" href="#"></a><span class="ls-bottom-slidebuttons"><a href="#" class=""></a><a href="#" class=""></a><a href="#" class="ls-nav-active"></a><div class="ls-thumbnail-hover" style="width: 100px; height: 60px;"><div class="ls-thumbnail-hover-inner" style="visibility: hidden; display: block;"><div class="ls-thumbnail-hover-bg"></div><div class="ls-thumbnail-hover-img" style="width: 100px; height: 60px;"><img style="height: 60px;"></div><span></span></div>
+                                    </div>
+                                    </span>
+                                    <a class="ls-nav-stop" href="#"></a>
+                                </div>
+                                <div class="ls-shadow" style="height: 69px; margin-top: -34.5px; visibility: visible;"><img src="js/layerslider/skins/borderlessdark3d/shadow.png"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="margin30"></div>
+            </div>
+        </div>
+        </section>
+        <!-- about section Ends here -->
+        <!-- screenshot section Starts here -->
+        <section id="screenshot" class="content">
+            <div class="main-title">
+                <div class="container">
+                    <h2>Screenshots</h2>
+                </div>
+            </div>
+            <div class="content-main">
+                <div class="container">
+                    <div class="sorting-container">
+                        <a class="active-sort" href="#" data-filter="*">All</a>
+                        <a href="#" data-filter=".blog">Blog</a>
+                        <a href="#" data-filter=".html">Html</a>
+                        <a href="#" data-filter=".news">News</a>
+                        <a href="#" data-filter=".photography">Photography</a>
+                        <a href="#" data-filter=".webdesign">Webdesign</a>
+                        <a href="#" data-filter=".woocommerce">Woocommerce</a>
+                    </div>
+                    <div class="margin25"></div>
+                    <div class="portfolio-container animate isotope" data-animation="pulse" style="position: relative; overflow: hidden; height: 620px;">
+                        <div class="portfolio one-third column blog news webdesign isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate(0px, 0px);">
+                            <div class="portfolio-thumb">
+                                <img src="http://placehold.it/500x375" alt="portfolio" title="" width="500" height="375">
+                                <div class="image-overlay">
+                                    <a href="#" class="link"><span class="icon-link"></span></a>
+                                    <a href="http://placehold.it/500x375" class="zoom" data-gal="prettyPhoto[gallery]"><span class="icon-search"></span></a>
+                                </div>
+                            </div>
+                            <div class="portfolio-detail">
+                                <div class="portfolio-title">
+                                    <h4><a href="#">Feather Rain</a></h4>
+                                    <p><a href="#">beauty</a>, <a href="#">photography</a></p>
+                                </div>
+                                <div class="views">
+                                    <span><i class="icon-heart"></i><br>24</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio one-third column photography woocommerce isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate(320px, 0px);">
+                            <div class="portfolio-thumb">
+                                <img src="http://placehold.it/500x375" alt="portfolio" title="" width="500" height="375">
+                                <div class="image-overlay">
+                                    <a href="#" class="link"><span class="icon-link"></span></a>
+                                    <a href="http://placehold.it/500x375" class="zoom" data-gal="prettyPhoto[gallery]"><span class="icon-search"></span></a>
+                                </div>
+                            </div>
+                            <div class="portfolio-detail">
+                                <div class="portfolio-title">
+                                    <h4><a href="#">Feather Rain</a></h4>
+                                    <p><a href="#">beauty</a>, <a href="#">photography</a></p>
+                                </div>
+                                <div class="views">
+                                    <span><i class="icon-heart"></i><br>24</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio one-third column blog webdesign html isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate(640px, 0px);">
+                            <div class="portfolio-thumb">
+                                <img src="http://placehold.it/500x375" alt="portfolio" title="" width="500" height="375">
+                                <div class="image-overlay">
+                                    <a href="#" class="link"><span class="icon-link"></span></a>
+                                    <a href="http://placehold.it/500x375" class="zoom" data-gal="prettyPhoto[gallery]"><span class="icon-search"></span></a>
+                                </div>
+                            </div>
+                            <div class="portfolio-detail">
+                                <div class="portfolio-title">
+                                    <h4><a href="#">Feather Rain</a></h4>
+                                    <p><a href="#">beauty</a>, <a href="#">photography</a></p>
+                                </div>
+                                <div class="views">
+                                    <span><i class="icon-heart"></i><br>24</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio one-third column news photography isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate(0px, 310px);">
+                            <div class="portfolio-thumb">
+                                <img src="http://placehold.it/500x375" alt="portfolio" title="" width="500" height="375">
+                                <div class="image-overlay">
+                                    <a href="#" class="link"><span class="icon-link"></span></a>
+                                    <a href="http://placehold.it/500x375" class="zoom" data-gal="prettyPhoto[gallery]"><span class="icon-search"></span></a>
+                                </div>
+                            </div>
+                            <div class="portfolio-detail">
+                                <div class="portfolio-title">
+                                    <h4><a href="#">Feather Rain</a></h4>
+                                    <p><a href="#">beauty</a>, <a href="#">photography</a></p>
+                                </div>
+                                <div class="views">
+                                    <span><i class="icon-heart"></i><br>24</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio one-third column photography woocommerce html isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate(320px, 310px);">
+                            <div class="portfolio-thumb">
+                                <img src="http://placehold.it/500x375" alt="portfolio" title="" width="500" height="375">
+                                <div class="image-overlay">
+                                    <a href="#" class="link"><span class="icon-link"></span></a>
+                                    <a href="http://placehold.it/500x375" class="zoom" data-gal="prettyPhoto[gallery]"><span class="icon-search"></span></a>
+                                </div>
+                            </div>
+                            <div class="portfolio-detail">
+                                <div class="portfolio-title">
+                                    <h4><a href="#">Feather Rain</a></h4>
+                                    <p><a href="#">beauty</a>, <a href="#">photography</a></p>
+                                </div>
+                                <div class="views">
+                                    <span><i class="icon-heart"></i><br>24</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio one-third column blog webdesign isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate(640px, 310px);">
+                            <div class="portfolio-thumb">
+                                <img src="http://placehold.it/500x375" alt="portfolio" title="" width="500" height="375">
+                                <div class="image-overlay">
+                                    <a href="#" class="link"><span class="icon-link"></span></a>
+                                    <a href="http://placehold.it/500x375" class="zoom" data-gal="prettyPhoto[gallery]"><span class="icon-search"></span></a>
+                                </div>
+                            </div>
+                            <div class="portfolio-detail">
+                                <div class="portfolio-title">
+                                    <h4><a href="#">Feather Rain</a></h4>
+                                    <p><a href="#">beauty</a>, <a href="#">photography</a></p>
+                                </div>
+                                <div class="views">
+                                    <span><i class="icon-heart"></i><br>24</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- screenshot section Ends here -->
+        <!-- contact section Starts here -->
+        <section id="contact" class="content">
+            <div class="main-title">
+                <div class="container">
+                    <h2>Contact</h2>
+                </div>
+            </div>
+            <div class="content-main">
+                <div class="container">
+                    <div class="location">
+                        <h4 class="map-title">Location Map</h4>
+
+                        <div id="map" style="position: relative; overflow: hidden;">
+                            <div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);">
+                                <div class="gm-style" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;">
+                                    <div><button draggable="false" aria-label="Keyboard shortcuts" title="Keyboard shortcuts" type="button" style="background: none transparent; display: block; border: none; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: absolute; cursor: pointer; user-select: none; z-index: 1000002; left: -100000px; top: -100000px;"></button></div>
+                                    <div tabindex="0" aria-label="Map" aria-roledescription="map" role="group" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url(&quot;http://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; touch-action: pan-x pan-y;">
+                                        <div style="z-index: 1; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);">
+                                            <div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;">
+                                                <div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+                                                    <div style="position: absolute; z-index: 984; transform: matrix(1, 0, 0, 1, 0, 0);">
+                                                        <div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;">
+                                                            <div style="width: 256px; height: 256px;"></div>
+                                                        </div>
+                                                        <div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px;">
+                                                            <div style="width: 256px; height: 256px;"></div>
+                                                        </div>
+                                                        <div style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px;">
+                                                            <div style="width: 256px; height: 256px;"></div>
+                                                        </div>
+                                                        <div style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px;">
+                                                            <div style="width: 256px; height: 256px;"></div>
+                                                        </div>
+                                                        <div style="position: absolute; left: 256px; top: -256px; width: 256px; height: 256px;">
+                                                            <div style="width: 256px; height: 256px;"></div>
+                                                        </div>
+                                                        <div style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px;">
+                                                            <div style="width: 256px; height: 256px;"></div>
+                                                        </div>
+                                                        <div style="position: absolute; left: -512px; top: 0px; width: 256px; height: 256px;">
+                                                            <div style="width: 256px; height: 256px;"></div>
+                                                        </div>
+                                                        <div style="position: absolute; left: -512px; top: -256px; width: 256px; height: 256px;">
+                                                            <div style="width: 256px; height: 256px;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div>
+                                            <div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div>
+                                            <div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"></div>
+                                            <div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+                                                <div style="position: absolute; z-index: 984; transform: matrix(1, 0, 0, 1, 0, 0);">
+                                                    <div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="http://maps.google.com/maps/vt?pb=!1m5!1m4!1i16!2i32768!3i32768!4i256!2m3!1e0!2sm!3i580298232!2m3!1e2!6m1!3e5!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;token=40924"
+                                                            style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                                    <div style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="http://maps.google.com/maps/vt?pb=!1m5!1m4!1i16!2i32768!3i32767!4i256!2m3!1e0!2sm!3i580297969!2m3!1e2!6m1!3e5!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;token=122569"
+                                                            style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                                    <div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="http://maps.google.com/maps/vt?pb=!1m5!1m4!1i16!2i32767!3i32768!4i256!2m3!1e0!2sm!3i580297969!2m3!1e2!6m1!3e5!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;token=30125"
+                                                            style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                                    <div style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="http://maps.google.com/maps/vt?pb=!1m5!1m4!1i16!2i32767!3i32767!4i256!2m3!1e0!2sm!3i580297969!2m3!1e2!6m1!3e5!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;token=125502"
+                                                            style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                                    <div style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="http://maps.google.com/maps/vt?pb=!1m5!1m4!1i16!2i32769!3i32768!4i256!2m3!1e0!2sm!3i580298232!2m3!1e2!6m1!3e5!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;token=37991"
+                                                            style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                                    <div style="position: absolute; left: 256px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="http://maps.google.com/maps/vt?pb=!1m5!1m4!1i16!2i32769!3i32767!4i256!2m3!1e0!2sm!3i580297969!2m3!1e2!6m1!3e5!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;token=119636"
+                                                            style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                                    <div style="position: absolute; left: -512px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="http://maps.google.com/maps/vt?pb=!1m5!1m4!1i16!2i32766!3i32768!4i256!2m3!1e0!2sm!3i580297969!2m3!1e2!6m1!3e5!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;token=33058"
+                                                            style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                                    <div style="position: absolute; left: -512px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="http://maps.google.com/maps/vt?pb=!1m5!1m4!1i16!2i32766!3i32767!4i256!2m3!1e0!2sm!3i580297969!2m3!1e2!6m1!3e5!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;token=128435"
+                                                            style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; touch-action: pan-x pan-y;">
+                                            <div style="z-index: 4; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);">
+                                                <div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div>
+                                                <div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div>
+                                                <div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"></div>
+                                                <div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="gm-style-moc" style="z-index: 4; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; opacity: 0;">
+                                            <p class="gm-style-mot"></p>
+                                        </div>
+                                    </div><iframe aria-hidden="true" frameborder="0" tabindex="-1" style="z-index: -1; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: none;"></iframe>
+                                    <div style="pointer-events: none; width: 100%; height: 100%; box-sizing: border-box; position: absolute; z-index: 1000002; opacity: 0; border: 2px solid rgb(26, 115, 232);"></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div><button draggable="false" aria-label="Toggle fullscreen view" title="Toggle fullscreen view" type="button" class="gm-control-active gm-fullscreen-control" style="background: none rgb(255, 255, 255); border: 0px; margin: 10px; padding: 0px; text-transform: none; appearance: none; position: absolute; cursor: pointer; user-select: none; border-radius: 2px; height: 40px; width: 40px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; overflow: hidden; top: 0px; right: 0px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%200v6h2V2h4V0H0zm16%200h-4v2h4v4h2V0h-2zm0%2016h-4v2h6v-6h-2v4zM2%2012H0v6h6v-2H2v-4z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%200v6h2V2h4V0H0zm16%200h-4v2h4v4h2V0h-2zm0%2016h-4v2h6v-6h-2v4zM2%2012H0v6h6v-2H2v-4z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%200v6h2V2h4V0H0zm16%200h-4v2h4v4h2V0h-2zm0%2016h-4v2h6v-6h-2v4zM2%2012H0v6h6v-2H2v-4z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"></button></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div>
+                                        <div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom" draggable="false" controlwidth="40" controlheight="113" style="margin: 10px; user-select: none; position: absolute; bottom: 127px; right: 40px;">
+                                            <div class="gmnoprint" controlwidth="40" controlheight="40" style="display: none; position: absolute;">
+                                                <div style="background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; width: 40px; height: 40px;"><button draggable="false" aria-label="Rotate map clockwise" title="Rotate map clockwise" type="button" class="gm-control-active" style="background: none; display: none; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; left: 0px; top: 0px; overflow: hidden; width: 40px; height: 40px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E" style="width: 20px; height: 20px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E" style="width: 20px; height: 20px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E" style="width: 20px; height: 20px;"></button>
+                                                    <div style="position: relative; overflow: hidden; width: 30px; height: 1px; margin: 0px 5px; background-color: rgb(230, 230, 230); display: none;"></div><button draggable="false" aria-label="Rotate map counterclockwise" title="Rotate map counterclockwise" type="button" class="gm-control-active" style="background: none; display: none; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; left: 0px; top: 0px; overflow: hidden; width: 40px; height: 40px; transform: scaleX(-1);"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E" style="width: 20px; height: 20px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E" style="width: 20px; height: 20px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E" style="width: 20px; height: 20px;"></button>
+                                                    <div style="position: relative; overflow: hidden; width: 30px; height: 1px; margin: 0px 5px; background-color: rgb(230, 230, 230); display: none;"></div><button draggable="false" aria-label="Tilt map" title="Tilt map" type="button" class="gm-tilt gm-control-active" style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; top: 0px; left: 0px; overflow: hidden; width: 40px; height: 40px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2016%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2016h8V9H0v7zm10%200h8V9h-8v7zM0%207h8V0H0v7zm10-7v7h8V0h-8z%22/%3E%3C/svg%3E" style="width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2016%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2016h8V9H0v7zm10%200h8V9h-8v7zM0%207h8V0H0v7zm10-7v7h8V0h-8z%22/%3E%3C/svg%3E" style="width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2016%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2016h8V9H0v7zm10%200h8V9h-8v7zM0%207h8V0H0v7zm10-7v7h8V0h-8z%22/%3E%3C/svg%3E" style="width: 18px;"></button></div>
+                                            </div>
+                                            <div style="position: absolute; left: 20px; top: 0px;"></div>
+                                            <div class="gmnoprint" controlwidth="40" controlheight="81" style="position: absolute; left: 0px; top: 32px;">
+                                                <div draggable="false" style="user-select: none; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; cursor: pointer; background-color: rgb(255, 255, 255); width: 40px; height: 81px;"><button draggable="false" aria-label="Zoom in" title="Zoom in" type="button" class="gm-control-active" style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; overflow: hidden; width: 40px; height: 40px; top: 0px; left: 0px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"></button>
+                                                    <div style="position: relative; overflow: hidden; width: 30px; height: 1px; margin: 0px 5px; background-color: rgb(230, 230, 230); top: 0px;"></div><button draggable="false" aria-label="Zoom out" title="Zoom out" type="button" class="gm-control-active" style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; overflow: hidden; width: 40px; height: 40px; top: 0px; left: 0px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"></button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;">
+                                            <a target="_blank" rel="noopener" href="https://maps.google.com/maps?ll=0,0&amp;z=16&amp;t=m&amp;hl=en-US&amp;gl=US&amp;mapclient=apiv3" title="Open this area in Google Maps (opens a new window)" style="position: static; overflow: visible; float: none; display: inline;">
+                                                <div style="width: 66px; height: 26px; cursor: pointer;"><img alt="" src="http://maps.gstatic.com/mapfiles/api-3/images/google4.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; user-select: none; border: 0px; padding: 0px; margin: 0px;"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div></div>
+                                    <div>
+                                        <div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 158px; bottom: 0px;">
+                                            <div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px;">
+                                                <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                                                    <div style="width: 1px;"></div>
+                                                    <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div>
+                                                </div>
+                                                <div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><button draggable="false" aria-label="Keyboard shortcuts" title="Keyboard shortcuts" type="button" style="background: none; display: inline-block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; color: rgb(0, 0, 0); font-family: inherit; line-height: normal;">Keyboard shortcuts</button></div>
+                                            </div>
+                                        </div>
+                                        <div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 71px; bottom: 0px; width: 87px;">
+                                            <div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px;">
+                                                <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                                                    <div style="width: 1px;"></div>
+                                                    <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div>
+                                                </div>
+                                                <div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><button draggable="false" aria-label="Map Data" title="Map Data" type="button" style="background: none; display: none; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; color: rgb(0, 0, 0); font-family: inherit; line-height: normal;">Map Data</button><span>Map data ©2021</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="gmnoprint gm-style-cc" draggable="false" style="z-index: 1000001; user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;">
+                                            <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                                                <div style="width: 1px;"></div>
+                                                <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div>
+                                            </div>
+                                            <div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a href="https://www.google.com/intl/en-US_US/help/terms_maps.html" target="_blank" rel="noopener" style="text-decoration: none; cursor: pointer; color: rgb(0, 0, 0);">Terms of Use</a></div>
+                                        </div>
+                                        <div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px; display: none; position: absolute; right: 0px; bottom: 0px;">
+                                            <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                                                <div style="width: 1px;"></div>
+                                                <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div>
+                                            </div>
+                                            <div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a target="_blank" rel="noopener" title="Report errors in the road map or imagery to Google" dir="ltr" href="https://www.google.com/maps/@0,0,16z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3" style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); text-decoration: none; position: relative;">Report a map error</a></div>
+                                        </div>
+                                        <div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;">
+                                            <div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(0, 0, 0); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Map data ©2021</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="background-color: white; font-weight: 500; font-family: Roboto, sans-serif; padding: 15px 25px; box-sizing: border-box; top: 5px; border: 1px solid rgba(0, 0, 0, 0.12); border-radius: 5px; left: 50%; max-width: 375px; position: absolute; transform: translateX(-50%); width: calc(100% - 10px); z-index: 1;">
+                                <div><img alt="" src="http://maps.gstatic.com/mapfiles/api-3/images/google_gray.svg" draggable="false" style="padding: 0px; margin: 0px; border: 0px; height: 17px; vertical-align: middle; width: 52px; user-select: none;"></div>
+                                <div style="line-height: 20px; margin: 15px 0px;"><span style="color: rgba(0, 0, 0, 0.87); font-size: 14px;">This page can't load Google Maps correctly.</span></div>
+                                <table style="width: 100%;">
+                                    <tr>
+                                        <td style="line-height: 16px; vertical-align: middle;"><a href="https://developers.google.com/maps/documentation/javascript/error-messages?utm_source=maps_js&amp;utm_medium=degraded&amp;utm_campaign=keyless#api-key-and-billing-errors" target="_blank" rel="noopener"
+                                                style="color: rgba(0, 0, 0, 0.54); font-size: 12px;">Do you own this website?</a></td>
+                                        <td style="text-align: right;"><button class="dismissButton">OK</button></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="margin55"></div>
+                        <div class="contact-info">
+                            <div class="one-half column">
+                                <h4>Location</h4>
+                                <p>63-65 North Wharf Road, London, W2 1LA <br>+44 20 3355 7960</p>
+                            </div>
+                            <div class="one-half column last">
+                                <div class="one-half column">
+                                    <h4>Customer Support</h4>
+                                    <a href="#">support@megahost.com</a>
+                                </div>
+                                <div class="one-half column last">
+                                    <h4>Customer Support</h4>
+                                    <a href="#">megahost@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="margin20"> </div>
+
+                            <div id="ajax_contact_msg"></div>
+                            <form name="frmcontact" action="php/send.php" class="contact-frm" method="post" novalidate="novalidate">
+                                <input type="text" required="" placeholder="Name" name="txtname">
+                                <p class="twocolumn">
+                                    <input type="email" required="" placeholder="Email" name="txtemail">
+                                    <input type="tel" placeholder="Phone" name="txtphone">
+                                </p>
+                                <textarea placeholder="Message" name="txtmessage"></textarea>
+                                <input type="submit" class="button" value="Submit" name="btnsend">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact section Ends here -->
+        <div class="margin100"></div>
+        <div class="margin50"></div>
+        <footer>
+            <div class="container">
+                <div class="support">
+                    <figure>
+                        <img src="images/support.png" alt="" title="">
+                    </figure>
+                    <div class="support-info">
+                        <h2>All Day Customer Support</h2>
+                        <span class="call">0800 hrs to 2200</span>
+                        <p>Et harum quidem rerum facilis est et expedita distinctio.</p>
+                    </div>
+                    <a href="#" class="button medium ico"><i class="icon-comments"></i>Live Chat Support</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <p>© 2013 BuddhaThemes | All Rights Reserved</p>
+                    <ul class="social-media">
+                        <li>
+                            <a href="#" class="icon-facebook"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon-google-plus"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon-twitter"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    </div>
+    </div>
+    <!-- Wrapper End -->
+
+    <!-- Java Scripts -->
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+    <script type="text/javascript" src="js/jquery.inview.js"></script>
+
+    <script type="text/javascript" src="js/jquery.nav.js"></script>
+    <script type="text/javascript" src="js/jquery-menu.js"></script>
+    <script type="text/javascript" src="js/jquery.meanmenu.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.quovolver.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.donutchart.js"></script>
+
+    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.tabs.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+
+    <!-- Layer Slider Starts -->
+    <script src="js/layerslider/jquery-easing-1.3.js" type="text/javascript"></script>
+    <script src="js/layerslider/jquery-transit-modified.js" type="text/javascript"></script>
+    <script src="js/layerslider/layerslider.transitions.js" type="text/javascript"></script>
+    <script src="js/layerslider/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $('#layerslider').layerSlider({
+                skinsPath: 'js/layerslider/skins/',
+                skin: 'borderlessdark3d',
+                width: '940px',
+                height: '500px',
+                responsive: true,
+                thumbnailNavigation: 'hover',
+                showCircleTimer: false,
+                navPrevNext: true,
+                navButtons: true,
+                hoverPrevNext: true
+            });
+        });
+    </script>
+    <!-- Layer Slider Ends -->
+
+    <!-- Revolution Slider Starts -->
+    <script src="js/revolution/jquery.themepunch.revolution.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            if ($.fn.cssOriginal != undefined)
+                $.fn.css = $.fn.cssOriginal;
+
+            var api = $('.fullwidthbanner').revolution({
+                delay: 9000,
+                startwidth: 940,
+                startheight: 570,
+
+                onHoverStop: "on", // Stop Banner Timet at Hover on Slide on/off
+
+                thumbWidth: 100, // Thumb With and Height and Amount (only if navigation Tyope set to thumb !)
+                thumbHeight: 50,
+                thumbAmount: 3,
+
+                hideThumbs: 200,
+                navigationType: "none", // bullet, thumb, none
+                navigationArrows: "solo", // nexttobullets, solo (old name verticalcentered), none
+
+                navigationStyle: "round", // round,square,navbar,round-old,square-old,navbar-old, or any from the list in the docu (choose between 50+ different item), custom
+
+                navigationHAlign: "center", // Vertical Align top,center,bottom
+                navigationVAlign: "bottom", // Horizontal Align left,center,right
+                navigationHOffset: 30,
+                navigationVOffset: -40,
+
+                soloArrowLeftHalign: "left",
+                soloArrowLeftValign: "center",
+                soloArrowLeftHOffset: 20,
+                soloArrowLeftVOffset: 0,
+
+                soloArrowRightHalign: "right",
+                soloArrowRightValign: "center",
+                soloArrowRightHOffset: 20,
+                soloArrowRightVOffset: 0,
+
+                touchenabled: "on", // Enable Swipe Function : on/off
+
+                stopAtSlide: -1, // Stop Timer if Slide "x" has been Reached. If stopAfterLoops set to 0, then it stops already in the first Loop at slide X which defined. -1 means do not stop at any slide. stopAfterLoops has no sinn in this case.
+                stopAfterLoops: -1, // Stop Timer if All slides has been played "x" times. IT will stop at THe slide which is defined via stopAtSlide:x, if set to -1 slide never stop automatic
+
+                hideCaptionAtLimit: 0, // It Defines if a caption should be shown under a Screen Resolution ( Basod on The Width of Browser)
+                hideAllCaptionAtLilmit: 0, // Hide all The Captions if Width of Browser is less then this value
+                hideSliderAtLimit: 0, // Hide the whole slider, and stop also functions if Width of Browser is less than this value
+
+                fullWidth: "on",
+
+                shadow: 0 //0 = no Shadow, 1,2,3 = 3 Different Art of Shadows -  (No Shadow in Fullwidth Version !)
+            });
+        });
+    </script>
+    <!-- Revolution Slider Ends -->
+
+    <!-- **To Top** -->
+    <script src="js/jquery.ui.totop.min.js"></script>
+
+    <!-- **Contact Map** -->
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="js/jquery.gmap.min.js"></script>
+
+    <script type="text/javascript" src="js/custom.js"></script>
+
+
+    <div id="ascrail2000" style="width: 7px; z-index: 99999; position: fixed; top: 0px; height: 100%; right: 0px; opacity: 0;">
+        <div style="position: relative; top: 176px; float: right; width: 5px; height: 32px; background-color: rgb(66, 66, 66); border: 1px solid rgb(66, 66, 66); background-clip: padding-box; border-radius: 5px;"></div>
+    </div>
+    <div id="ascrail2000-hr" style="height: 8px; z-index: 99999; position: fixed; left: 0px; width: 100%; bottom: 0px; display: none; opacity: 0;">
+        <div style="position: relative; top: 0px; height: 5px; width: 1468px; background-color: rgb(66, 66, 66); border: 1px solid rgb(66, 66, 66); background-clip: padding-box; border-radius: 5px;"></div>
+    </div><a href="#" id="toTop" style="display: inline;"><span id="toTopHover"></span>To Top</a></body>
+
+</html>
