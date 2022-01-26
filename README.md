@@ -37,7 +37,7 @@ function modifiedFunctionNameEx(param1_ex, param2_ex) {
   `Apache`
   and
   `MySQL`
-2. In phpMyAdmin import database file located at:
+2. In phpMyAdmin ``` http://localhost/phpmyadmin/ ``` import database file located at:
 ```
 ├── barkomatic
 |   ├── db
