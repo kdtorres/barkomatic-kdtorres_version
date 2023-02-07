@@ -26,7 +26,7 @@ function modifiedFunctionNameEx(param1_ex, param2_ex) {
         $mail->Username = 'yourShippingEmail@gmail.com',
         $mail->Password = 'yourShippingEmailPasswordReal,
         
-    // It can be changed from static email into dynamic based on ship owners registration you can freely make your own algorithm for this.
+    //.....
     
    ...
    
