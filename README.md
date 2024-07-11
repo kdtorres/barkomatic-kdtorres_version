@@ -1,11 +1,11 @@
 <p align="center"><img src="https://github.com/kimdavetorres/barkomatic/blob/main/img/core-img/logo.png" title="Barkomatic" alt="Barkomatic" /></p>
 <p align="center">A Web Online Ticketing for Shipping</p>
 
-## Prerequisites
- [XAMPP](https://www.apachefriends.org/index.html) - Cross-platform web server
+## Xampp
+ [XAMPP](https://www.apachefriends.org/index.html)
 
-## Configuration
-PHP Mailer code configuration
+## PHP Mailer
+PHP Mailer
 ```
 ├── barkomatic
 |   ├── dashboard
