@@ -47,7 +47,7 @@ function modifiedFunctionNameEx(param1_ex, param2_ex) {
 ```
 http://localhost/barkomatic/
 ```
-## Project Functionality
+## Functionality
  `Passenger`
   ```
   Create Account
