@@ -33,11 +33,11 @@ function modifiedFunctionNameEx(param1_ex, param2_ex) {
 ```
 
 ## Deployment
-1. Open XAMPP Control Panel and start:
+1. Start XAMPP Control Panel:
   `Apache`
   and
   `MySQL`
-2. In phpMyAdmin ``` http://localhost/phpmyadmin/ ``` import database file located at:
+2. In phpMyAdmin ``` http://localhost/phpmyadmin/ ``` import database file located at folders:
 ```
 ├── barkomatic
 |   ├── db
